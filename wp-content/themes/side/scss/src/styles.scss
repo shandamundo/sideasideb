@@ -18,6 +18,18 @@ body {
   font-family: 'Space Mono', sans-serif;
 }
 
+.full::-webkit-scrollbar, .half--review::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.full::-webkit-scrollbar-track, .half--review::-webkit-scrollbar-track {
+    box-shadow: 0px 0px 1px $primary;
+}
+ 
+.full::-webkit-scrollbar-thumb, .half--review::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
 a {
   color: $primary;
   font-weight: 200;
@@ -73,6 +85,17 @@ p {
   float: left;
   height: 100%;
   width: 100%;
+}
+
+.full {
+  float: left;
+  height: 100%;
+  overflow-y: scroll;
+  width: 74.5%;
+}
+
+.half--review {
+  overflow-y: scroll;
 }
 
 .padded {
@@ -151,4 +174,21 @@ p {
   display: inline-block;
   margin: 0px;
   padding: 0px 5px;
+}
+
+.reviews-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.reviews-list li {
+  border: 1px solid $primary;
+  display: inline-block;
+  margin-top: 10px;
+  width: 33.333%;
+}
+
+.reviews-list li a {
+  display: block;
+  padding: 50px;
 }
