@@ -18,10 +18,39 @@ body {
   font-family: 'Space Mono', sans-serif;
 }
 
+.full::-webkit-scrollbar, .half--review::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.full::-webkit-scrollbar-track, .half--review::-webkit-scrollbar-track {
+    box-shadow: 0px 0px 1px $primary;
+}
+ 
+.full::-webkit-scrollbar-thumb, .half--review::-webkit-scrollbar-thumb {
+  background-color: $primary;
+}
+
+a {
+  color: $primary;
+  font-weight: 200;
+}
+
+p {
+  margin-top: 40px;
+  padding: 0px 25px;
+}
+
+.p-cols {
+  column-count: 2;
+  font-size: 14px;
+  text-align: left;
+}
+
 .main {
   border: $border;
-  display: block;
+  display: table;
   height: 90vh;
+  position: relative;
   width: 95vw;
 
   @include centerer;
@@ -30,15 +59,136 @@ body {
 //col
 
 .col {
-  display: block;
+  display: inline-block;
   float: left;
+  height: 100%;
   padding: 25px;
+  position: relative;
+  width: 100%;
+}
+
+.half {
+  float: left;
+  height: 100%;
+  width: 37%;
 }
 
 .left-col {
-  width: 30%;
+  border-right: $border;
+  display: table;
+  float: left;
+  height: 100%;
+  width: 25%;
 }
 
-.logo-col {
+.half-col {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
 
+.full {
+  float: left;
+  height: 100%;
+  overflow-y: scroll;
+  width: 74.5%;
+}
+
+.half--review {
+  overflow-y: scroll;
+}
+
+.padded {
+  padding: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.br {
+  border-right: $border;
+}
+
+.social {
+  bottom: 25px;
+  list-style-type: none;
+  padding-left: 0px;
+  position: absolute;
+}
+
+.menu li {
+  line-height: 50px;
+}
+
+.menu li a {
+  font-size: 20px;
+}
+
+.hollow {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 -1px 0 $primary, 1px 0 0 $primary, 0 1px 0 $primary, -1px 0 0 $primary;
+  text-transform: uppercase;
+}
+
+.stamp {
+  border: $border;
+  background-color: $primary;
+}
+
+.stamp .hollow {
+  display: inline;
+}
+
+.latest-list {
+  list-style-type: none;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+.latest-list__card {
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  display: block;
+  float: left;
+  height: 29vh;
+  position: relative;
+  width: 50%;
+}
+
+.latest-list__name {
+  background: #000;
+  bottom: 0px;
+  color: #fff;
+  font-weight: 800;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.author {
+  color: #fff;
+  background-color: $primary;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px 5px;
+}
+
+.reviews-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.reviews-list li {
+  border: 1px solid $primary;
+  display: inline-block;
+  margin-top: 10px;
+  width: 33.333%;
+}
+
+.reviews-list li a {
+  display: block;
+  padding: 50px;
 }
