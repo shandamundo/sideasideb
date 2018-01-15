@@ -18,10 +18,15 @@ body {
   font-family: 'Space Mono', sans-serif;
 }
 
+a {
+  color: $primary;
+}
+
 .main {
   border: $border;
-  display: block;
+  display: table;
   height: 90vh;
+  position: relative;
   width: 95vw;
 
   @include centerer;
@@ -33,12 +38,19 @@ body {
   display: block;
   float: left;
   padding: 25px;
+  position: relative;
 }
 
 .left-col {
-  width: 30%;
+  border-right: $border;
+  height: 100%;
+  width: 25%;
 }
 
-.logo-col {
+.menu li {
+  line-height: 50px;
+}
 
+.menu li a {
+  font-size: 20px;
 }

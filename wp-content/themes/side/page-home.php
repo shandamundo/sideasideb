@@ -14,5 +14,14 @@
     <div class="logo-col">
       <h1>sideAsideB</h2>
     </div>
+    <div class="menu-col">
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="half-col">
+      
+    </div>
   </div>
 </div>
