@@ -1,0 +1,44 @@
+$primary: #009874;
+$secondary: #fff;
+$border: 5px solid $primary;
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  color: $primary;
+  font-family: 'Space Mono', sans-serif;
+}
+
+.main {
+  border: $border;
+  display: block;
+  height: 90vh;
+  width: 95vw;
+
+  @include centerer;
+}
+
+//col
+
+.col {
+  display: block;
+  float: left;
+  padding: 25px;
+}
+
+.left-col {
+  width: 30%;
+}
+
+.logo-col {
+
+}

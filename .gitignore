@@ -1,0 +1,7 @@
+/node_modules
+wp-config.php
+build/**/*.js
+build/**/*.css
+build/**/*/.min.js
+build/**/*/.min.css
+css/**/*/.css

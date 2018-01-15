@@ -1,0 +1,72 @@
+{
+  "name": "sideasideb",
+  "version": "1.0.0",
+  "description": "Vibey music blog.",
+  "author": "James Shand <jshand27@gmail.com>",
+  "main": "/wp-content/themes/side/index.php",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/shandamundo/sideasideb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shandamundo/sideasideb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shandamundo/sideasideb/issues"
+  },
+  "keywords": [
+    "wordpress",
+    "music",
+    "blog"
+  ],
+  "engines": {
+    "node": "^8.8.1",
+    "npm": "^5.4.2"
+  },
+  "scripts": {
+    "dev": "gulp"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hamburgers": "^0.9.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "bundlesize": "^0.15.3",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-environments": "^0.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "sass-lint": "^1.12.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "env"
+          ]
+        }
+      ]
+    ]
+  }
+}
