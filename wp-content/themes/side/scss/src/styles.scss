@@ -115,6 +115,7 @@ p {
     position: absolute;
     top: 0px;
     width: calc(100% - 2.5px);
+    z-index: -1;
   }
 }
 
