@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 <div class="container main">
 
-  <div class="left-col">
+  <div class="left-col br">
     <div class="col">
       <div class="logo-col">
         <h1>sideAsideB</h2>

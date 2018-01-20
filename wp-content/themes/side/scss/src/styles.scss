@@ -70,11 +70,10 @@ p {
 .half {
   float: left;
   height: 100%;
-  width: 37%;
+  width: 37.5%;
 }
 
 .left-col {
-  border-right: $border;
   display: table;
   float: left;
   height: 100%;
@@ -107,7 +106,16 @@ p {
 }
 
 .br {
-  border-right: $border;
+  position: relative;
+  &:after {
+    border-right: $border;
+    content: '';
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: calc(100% - 2.5px);
+  }
 }
 
 .social {
