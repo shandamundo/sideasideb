@@ -96,6 +96,7 @@ p {
 }
 
 .half--review {
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -265,6 +266,9 @@ p {
     padding-bottom: 25px;
     width: 100%;
   }
+  .review-template-default .left-col {
+    height: 235px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -276,6 +280,12 @@ p {
   }
   .reviews-list li {
     width: 100%;
+  }
+  .half--review {
+    overflow-y: visible;
+  }
+  body.single-review .main {
+    overflow: hidden;
   }
 }
 
