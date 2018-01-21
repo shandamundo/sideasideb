@@ -92,7 +92,7 @@ p {
   float: left;
   height: 100%;
   overflow-y: scroll;
-  width: 74.5%;
+  width: 75%;
 }
 
 .half--review {
@@ -213,6 +213,7 @@ p {
 @media screen and (max-width: 992px) {
   .main {
     height: auto;
+    min-height: 100%;
     transform: none;
     position: initial;
     width: auto;
@@ -224,6 +225,7 @@ p {
   }
   .left-col {
     height: 170px;
+    position: relative;
     width: 100%;
     
     &:before {
@@ -258,6 +260,11 @@ p {
     height: auto;
     width: 50%;
   }
+  .full {
+    overflow-y: visible;
+    padding-bottom: 25px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -273,7 +280,16 @@ p {
   .padded {
     padding: 5px;
   }
+  .logo-col, .menu-col {
+    padding: 0px 5px;
+  }
   .latest-list__card {
     width: 100%;
+  }
+  .social {
+    right: 5px;
+  }
+  .half.center {
+    padding-bottom: 25px;
   }
 }
