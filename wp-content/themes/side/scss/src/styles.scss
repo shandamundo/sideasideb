@@ -271,6 +271,12 @@ p {
   .half {
     width: 100%;
   }
+  .reviews-list {
+    padding: 25px;
+  }
+  .reviews-list li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -291,5 +297,8 @@ p {
   }
   .half.center {
     padding-bottom: 25px;
+  }
+  .reviews-list {
+    padding: 5px;
   }
 }
