@@ -64,7 +64,6 @@ p {
   height: 100%;
   padding: 25px;
   position: relative;
-  width: 100%;
 }
 
 .half {
@@ -74,7 +73,6 @@ p {
 }
 
 .left-col {
-  display: table;
   float: left;
   height: 100%;
   width: 25%;
@@ -200,4 +198,57 @@ p {
 .reviews-list li a {
   display: block;
   padding: 50px;
+}
+
+@media screen and (max-width: 1999px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col {
+    display: table-cell;
+    padding: 0px;
+    width: 100%;
+  }
+  .logo-col, .menu-col {
+    padding: 0px 25px;
+  }
+  .left-col {
+    height: 200px;
+    width: 100%;
+    
+    &:before {
+      border-bottom: $border;
+      content: '';
+      height: 100%;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+  .br {
+    &:after {
+      display: none;
+    }
+  }
+  .menu {
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .social {
+    bottom: 55px;
+    right: 25px;
+  }
+  .half {
+    height: auto;
+    width: 50%;
+  }
 }
