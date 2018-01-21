@@ -10,6 +10,14 @@ $black: #000;
   transform: translate(-50%, -50%);
 }
 
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
 html {
   height: 100vh;
 }
@@ -210,7 +218,7 @@ p {
 .half__button {
   background-color: $primary;
   color: $secondary;
-  display: inline-block;
+  display: none;
   font-size: 22px;
   margin-top: 10px;
   padding: 0px 5px;
@@ -224,6 +232,12 @@ p {
 .half__button--right {
   position: absolute;
   right: 20px;
+}
+
+.half__button--bottom {
+  left: auto;
+  position: relative;
+  right: auto;
 }
 
 @media screen and (max-width: 1999px) {
@@ -240,11 +254,13 @@ p {
     position: initial;
     width: auto;
   }
+
   .col {
     display: table-cell;
     padding: 0px;
     width: 100%;
   }
+
   .left-col {
     height: 170px;
     position: relative;
@@ -261,32 +277,39 @@ p {
       z-index: -1;
     }
   }
+
   .br {
     &:after {
       display: none;
     }
   }
+
   .menu {
     margin-left: 0px;
     padding-left: 0px;
     width: 100%;
   }
+
   .menu li {
     display: inline-block;
   }
+
   .social {
     bottom: 55px;
     right: 25px;
   }
+
   .half {
     height: auto;
     width: 50%;
   }
+
   .full {
     overflow-y: visible;
     padding-bottom: 25px;
     width: 100%;
   }
+
   .review-template-default .left-col {
     height: 235px;
   }
@@ -296,20 +319,64 @@ p {
   .half {
     width: 100%;
   }
+
+  .half__button {
+    display: inline-block;
+  }
+
   .reviews-list {
     padding: 25px;
   }
+
   .reviews-list li {
     width: 100%;
   }
+  
   .half--review {
     overflow-y: visible;
+    z-index: 1;
+
+    @include transition(0.45s);
   }
-  body.single-review .main {
-    overflow: hidden;
+
+  body.single-review {
+    overflow-x: hidden;
   }
+
   .half--review .hollow {
     margin-top: 60px;
+  }
+
+  .half--b {
+    right: -100vw;
+    overflow: visible;
+    position: absolute;
+    top: 247px;
+    z-index:2;
+
+    &:before {
+      content: '';
+      background-color: white;
+      height: 99.5%;
+      left: 2%;
+      position: absolute;
+      top: 5px;
+      width: 96%;
+      z-index: -1;
+    }
+  }
+
+  .half--a {
+    overflow: hidden;
+  }
+
+  .half--b.active {
+    right: 0px;
+  }
+
+  .half--a.hide {
+    height: 100px!important;
+    opacity: 0;
   }
 }
 
@@ -317,21 +384,27 @@ p {
   .main {
     border: none;
   }
+
   .padded {
     padding: 5px;
   }
+
   .logo-col, .menu-col {
     padding: 0px 5px;
   }
+
   .latest-list__card {
     width: 100%;
   }
+
   .social {
     right: 5px;
   }
+
   .half.center {
     padding-bottom: 25px;
   }
+
   .reviews-list {
     padding: 5px;
   }

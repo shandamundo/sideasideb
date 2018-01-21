@@ -29,28 +29,35 @@
       </div>
     </div>
   </div>
-  <div class="half center half--review">
-      <span class="half__button half__button--right">Side B ></span>
-      <h1 class="hollow">Side A</h1>
-      <h3 class="author">James Shand</h3>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-      <p class="p-cols">
-        Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-      </p>
-      <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-      <h1 class="hollow">9/10</h1>
-  </div>
-  <div class="half center half--review">
-      <span class="half__button half__button--left">< Side A</span>
-      <h1 class="hollow">Side B</h1>
-      <h3 class="author">Paul Smith</h3>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-      <p class="p-cols">
-        Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-      </p>
-      <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-      <h1 class="hollow">8/10</h1>
-  </div>
+
+    <div class="half center half--review half--a">
+        <span class="half__button half__button--right">Side B ></span>
+        <h1 class="hollow">Side A</h1>
+        <h3 class="author">James Shand</h3>
+        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
+        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
+        <p class="p-cols">
+          Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
+        </p>
+        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
+        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
+        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
+        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
+        <h1 class="hollow">9/10</h1>
+        <span class="half__button half__button--right half__button--bottom">Side B ></span>
+    </div>
+    <div class="half center half--review half--b">
+        <span class="half__button half__button--left">< Side A</span>
+        <h1 class="hollow">Side B</h1>
+        <h3 class="author">Paul Smith</h3>
+        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
+        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
+        <p class="p-cols">
+          Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
+        </p>
+        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
+        <h1 class="hollow">8/10</h1>
+        <span class="half__button half__button--left half__button--bottom">< Side A</span>
+    </div>
+
 </div>
