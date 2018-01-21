@@ -30,6 +30,7 @@
     </div>
   </div>
   <div class="half center half--review">
+      <span class="half__button half__button--right">Side B ></span>
       <h1 class="hollow">Side A</h1>
       <h3 class="author">James Shand</h3>
       <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
@@ -41,6 +42,7 @@
       <h1 class="hollow">9/10</h1>
   </div>
   <div class="half center half--review">
+      <span class="half__button half__button--left">< Side A</span>
       <h1 class="hollow">Side B</h1>
       <h3 class="author">Paul Smith</h3>
       <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>

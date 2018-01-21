@@ -1,6 +1,7 @@
 $primary: #009874;
 $secondary: #fff;
 $border: 5px solid $primary;
+$black: #000;
 
 @mixin centerer {
   position: absolute;
@@ -85,6 +86,7 @@ p {
 .half-col {
   float: left;
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
@@ -171,9 +173,9 @@ p {
 }
 
 .latest-list__name {
-  background: #000;
+  background: $black;;
   bottom: 0px;
-  color: #fff;
+  color: $secondary;
   font-weight: 800;
   left: 0px;
   position: absolute;
@@ -181,7 +183,7 @@ p {
 }
 
 .author {
-  color: #fff;
+  color: $secondary;
   background-color: $primary;
   display: inline-block;
   margin: 0px;
@@ -203,6 +205,25 @@ p {
 .reviews-list li a {
   display: block;
   padding: 50px;
+}
+
+.half__button {
+  background-color: $primary;
+  color: $secondary;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 0px 5px;
+}
+
+.half__button--left {
+  position: absolute;
+  left: 20px;
+}
+
+.half__button--right {
+  position: absolute;
+  right: 20px;
 }
 
 @media screen and (max-width: 1999px) {
@@ -286,6 +307,9 @@ p {
   }
   body.single-review .main {
     overflow: hidden;
+  }
+  .half--review .hollow {
+    margin-top: 60px;
   }
 }
 
