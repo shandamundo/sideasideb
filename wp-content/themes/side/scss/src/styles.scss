@@ -61,9 +61,13 @@ p {
 .col {
   display: inline-block;
   float: left;
-  height: 100%;
-  padding: 25px;
+  height: 100%; 
   position: relative;
+  width: 100%;
+}
+
+.logo-col, .menu-col {
+  padding: 0px 25px;
 }
 
 .half {
@@ -207,16 +211,19 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+  .main {
+    height: auto;
+    transform: none;
+    position: initial;
+    width: auto;
+  }
   .col {
     display: table-cell;
     padding: 0px;
     width: 100%;
   }
-  .logo-col, .menu-col {
-    padding: 0px 25px;
-  }
   .left-col {
-    height: 200px;
+    height: 170px;
     width: 100%;
     
     &:before {
@@ -250,5 +257,23 @@ p {
   .half {
     height: auto;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .half {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    border: none;
+  }
+  .padded {
+    padding: 5px;
+  }
+  .latest-list__card {
+    width: 100%;
   }
 }
