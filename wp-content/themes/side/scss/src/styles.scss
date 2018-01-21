@@ -1,12 +1,21 @@
 $primary: #009874;
 $secondary: #fff;
 $border: 5px solid $primary;
+$black: #000;
 
 @mixin centerer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
 
 html {
@@ -61,21 +70,22 @@ p {
 .col {
   display: inline-block;
   float: left;
-  height: 100%;
-  padding: 25px;
+  height: 100%; 
   position: relative;
   width: 100%;
+}
+
+.logo-col, .menu-col {
+  padding: 0px 25px;
 }
 
 .half {
   float: left;
   height: 100%;
-  width: 37%;
+  width: 37.5%;
 }
 
 .left-col {
-  border-right: $border;
-  display: table;
   float: left;
   height: 100%;
   width: 25%;
@@ -84,6 +94,7 @@ p {
 .half-col {
   float: left;
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
@@ -91,10 +102,11 @@ p {
   float: left;
   height: 100%;
   overflow-y: scroll;
-  width: 74.5%;
+  width: 75%;
 }
 
 .half--review {
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -107,7 +119,17 @@ p {
 }
 
 .br {
-  border-right: $border;
+  position: relative;
+  &:after {
+    border-right: $border;
+    content: '';
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: calc(100% - 2.5px);
+    z-index: -1;
+  }
 }
 
 .social {
@@ -159,9 +181,9 @@ p {
 }
 
 .latest-list__name {
-  background: #000;
+  background: $black;;
   bottom: 0px;
-  color: #fff;
+  color: $secondary;
   font-weight: 800;
   left: 0px;
   position: absolute;
@@ -169,7 +191,7 @@ p {
 }
 
 .author {
-  color: #fff;
+  color: $secondary;
   background-color: $primary;
   display: inline-block;
   margin: 0px;
@@ -191,4 +213,199 @@ p {
 .reviews-list li a {
   display: block;
   padding: 50px;
+}
+
+.half__button {
+  background-color: $primary;
+  color: $secondary;
+  display: none;
+  font-size: 22px;
+  margin-top: 10px;
+  padding: 0px 5px;
+}
+
+.half__button--left {
+  position: absolute;
+  left: 20px;
+}
+
+.half__button--right {
+  position: absolute;
+  right: 20px;
+}
+
+.half__button--bottom {
+  left: auto;
+  position: relative;
+  right: auto;
+}
+
+@media screen and (max-width: 1999px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    height: auto;
+    min-height: 100%;
+    transform: none;
+    position: initial;
+    width: auto;
+  }
+
+  .col {
+    display: table-cell;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .left-col {
+    height: 170px;
+    position: relative;
+    width: 100%;
+    
+    &:before {
+      border-bottom: $border;
+      content: '';
+      height: 100%;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .br {
+    &:after {
+      display: none;
+    }
+  }
+
+  .menu {
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .social {
+    bottom: 55px;
+    right: 25px;
+  }
+
+  .half {
+    height: auto;
+    width: 50%;
+  }
+
+  .full {
+    overflow-y: visible;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  .review-template-default .left-col {
+    height: 235px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .half {
+    width: 100%;
+  }
+
+  .half__button {
+    display: inline-block;
+  }
+
+  .reviews-list {
+    padding: 25px;
+  }
+
+  .reviews-list li {
+    width: 100%;
+  }
+  
+  .half--review {
+    overflow-y: visible;
+    z-index: 1;
+
+    @include transition(0.45s);
+  }
+
+  body.single-review {
+    overflow-x: hidden;
+  }
+
+  .half--review .hollow {
+    margin-top: 60px;
+  }
+
+  .half--b {
+    right: -100vw;
+    overflow: visible;
+    position: absolute;
+    top: 247px;
+    z-index:2;
+
+    &:before {
+      content: '';
+      background-color: white;
+      height: 99.5%;
+      left: 2%;
+      position: absolute;
+      top: 5px;
+      width: 96%;
+      z-index: -1;
+    }
+  }
+
+  .half--a {
+    overflow: hidden;
+  }
+
+  .half--b.active {
+    right: 0px;
+  }
+
+  .half--a.hide {
+    height: 100px!important;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    border: none;
+  }
+
+  .padded {
+    padding: 5px;
+  }
+
+  .logo-col, .menu-col {
+    padding: 0px 5px;
+  }
+
+  .latest-list__card {
+    width: 100%;
+  }
+
+  .social {
+    right: 5px;
+  }
+
+  .half.center {
+    padding-bottom: 25px;
+  }
+
+  .reviews-list {
+    padding: 5px;
+  }
 }
