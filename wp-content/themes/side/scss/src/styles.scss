@@ -245,6 +245,16 @@ p {
   right: auto;
 }
 
+.artist-image {
+  background-size: cover!important;
+  background-position: center center!important;
+  margin: 0 auto;
+  margin-top: 25px;
+  min-height: 250px;
+  padding-top: 25px;
+  width: calc(100% - 50px);
+}
+
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;
