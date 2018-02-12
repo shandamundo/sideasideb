@@ -30,10 +30,8 @@
   </div>
   <div class="full center">
     <h1 class="hollow">About</h1>
-    <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-    <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-    <p class="p-cols">
-      Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-    </p>
+    <?php echo get_field('about_text'); ?>
+    <h1 class="hollow">Review Format</h1>
+    <?php echo get_field('review_format_text'); ?>
   </div>
 </div>

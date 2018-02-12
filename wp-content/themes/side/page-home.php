@@ -32,11 +32,8 @@
   <div class="half center br">
     <div class="half-col">
       <h1 class="hollow">Welcome</h1>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-      <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-      <p class="p-cols">
-        Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-      </p>
+      <?php echo get_field('text_1'); ?>
+      <?php echo get_field('text_2'); ?>
     </div>
   </div>
   <div class="half">

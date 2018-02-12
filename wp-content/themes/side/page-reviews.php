@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Page
+ * Template Name: Reviews Page
  * @package WordPress
  * @subpackage Side
  * @since Side 1.0
