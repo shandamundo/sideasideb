@@ -255,6 +255,12 @@ p {
   width: calc(100% - 50px);
 }
 
+.album-art {
+  height: auto;
+  margin-top: 25px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;

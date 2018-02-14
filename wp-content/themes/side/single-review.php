@@ -9,13 +9,32 @@
 ?>
 
 <?php get_header(); ?>
+
+<?php
+
+  $album = get_field('album')[0];
+  $albumID = $album->ID;
+  
+  $albumName = get_field('name', $albumID);
+  $albumYear = get_field('year', $albumID);
+  $albumArt = get_field('image', $albumID);
+
+  $albumArtist = get_field('artist', $albumID);
+  $artistID = $albumArtist[0]->ID;
+  $artistLink = get_permalink($artistID);
+
+  $artistName = get_field('name', $artistID);
+
+?>
+
 <div class="container main">
 
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
-        <h1>Mitski</h1>
-        <h1>Puberty 2</h1>
+        <a href="<?php echo $artistLink; ?>"><img src="<?php echo $albumArt; ?>" class="album-art" /></a>
+        <h2><?php echo $albumName; ?></h2>
+        <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
       </div>
       <div class="menu-col">
         <ul class="menu">
@@ -29,34 +48,36 @@
       </div>
     </div>
   </div>
-
+    <?php 
+    $authorInfoA = get_field('side_a_author');
+    $authorInfoB = get_field('side_b_author');
+    ?>
     <div class="half center half--review half--a">
         <span class="half__button half__button--right">Side B ></span>
         <h1 class="hollow">Side A</h1>
-        <h3 class="author">James Shand</h3>
-        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-        <p class="p-cols">
-          Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-        </p>
-        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-        <h1 class="hollow">9/10</h1>
+        <h3 class="author"><?php echo $authorInfoA['user_firstname'] . ' ' . $authorInfoA['user_lastname']; ?></h3>
+        <p><?php echo get_field('side_a_intro'); ?></p>
+        <h4>What I Liked</h4>
+        <?php echo get_field('side_a_liked'); ?>
+        <h4>What I Disliked</h4>
+        <?php echo get_field('side_a_disliked'); ?>
+        <h4>Final Thoughts</h4>
+        <?php echo get_field('side_a_final'); ?>
+        <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
         <span class="half__button half__button--right half__button--bottom">Side B ></span>
     </div>
     <div class="half center half--review half--b">
         <span class="half__button half__button--left">< Side A</span>
         <h1 class="hollow">Side B</h1>
-        <h3 class="author">Paul Smith</h3>
-        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists.</p>
-        <p>We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists. We have been writing lots of different reviews that you might be interested in reading, they are from a wide variety of artists..</p>
-        <p class="p-cols">
-          Some of the stuff we've actually been writing about has not been super interesting. Other stuff has been super interesting and you will maybe enjoy some of it.
-        </p>
-        <p>Overall I'd give the album some sort of rating out of 10 because that is probably the only thing we can do to determine how good it was, maybe even how bad it was</p>
-        <h1 class="hollow">8/10</h1>
+        <h3 class="author"><?php echo $authorInfoB['user_firstname'] . ' ' . $authorInfoB['user_lastname']; ?></h3>
+        <p><?php echo get_field('side_b_intro'); ?></p>
+        <h4>What I Liked</h4>
+        <?php echo get_field('side_b_liked'); ?>
+        <h4>What I Disliked</h4>
+        <?php echo get_field('side_b_disliked'); ?>
+        <h4>Final Thoughts</h4>
+        <?php echo get_field('side_b_final'); ?>
+        <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
         <span class="half__button half__button--left half__button--bottom">< Side A</span>
     </div>
 
