@@ -43,21 +43,44 @@
           <h1 class="hollow">Latest</h1>
         </div>
         <div class="latest">
+
           <ul class="latest-list">
+            <?php 
+
+            $reviews = get_posts([
+              'numberposts' => 4,
+              'post_type' => 'review'
+            ]);
+
+            foreach($reviews as $review){
+
+              $id = $review->ID;
+              $url = get_permalink($id);
+              $album = get_field('album', $id);
+              $albumName = get_field('name', $album[0]->ID);
+              $albumArt = get_field('image', $album[0]->ID);
+
+              $artist = get_field('artist', $album[0]->ID);
+              $artistID = $artist[0]->ID;
+              $artistName = get_field('name', $artistID);
+
+              echo '<li class="latest-list__card" style="background: url('.$albumArt.')">
+                      <a href="'.$url.'"><span class="latest-list__name">'.$artistName.' - '.$albumName.'</span></a>
+                    </li>';
+            }
+            
+            ?>
+            <!-- <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
+              <span class="latest-list__name">Mitski - Puberty 2</span>
+            </li>
+            </li>
             <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
               <span class="latest-list__name">Mitski - Puberty 2</span>
             </li>
-            <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
-              <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li>
             </li>
             <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
               <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li>
-            </li>
-            <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
-              <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li>
+            </li> -->
           </ul>
           <div class="stamp rt">
             <h1 class="hollow">Reviews</h1>
