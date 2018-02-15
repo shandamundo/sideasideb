@@ -64,6 +64,8 @@
         <h4>Final Thoughts</h4>
         <?php echo get_field('side_a_final'); ?>
         <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
+        <h5>Sounds like</h5>
+        <?php echo get_field('side_a_sounds'); ?>
         <span class="half__button half__button--right half__button--bottom">Side B ></span>
     </div>
     <div class="half center half--review half--b">
@@ -78,6 +80,8 @@
         <h4>Final Thoughts</h4>
         <?php echo get_field('side_b_final'); ?>
         <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
+        <h5>Sounds like</h5>
+        <?php echo get_field('side_b_sounds'); ?>
         <span class="half__button half__button--left half__button--bottom">< Side A</span>
     </div>
 
