@@ -1,6 +1,7 @@
 <?php
 /**
- * Template Name: About Page
+ * Template Name: Single Artist
+
  * @package WordPress
  * @subpackage Side
  * @since Side 1.0
@@ -13,12 +14,12 @@
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
-        <h1>sideAsideB</h2>
+        <h1>Mitski</h1>
+        <h1>Puberty 2</h1>
       </div>
       <div class="menu-col">
         <ul class="menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Reviews</a></li>
+          <li><a href="/home">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="#">facebook</a></li>
@@ -29,9 +30,9 @@
     </div>
   </div>
   <div class="full center">
-    <h1 class="hollow">About</h1>
-    <?php echo get_field('about_text'); ?>
-    <h1 class="hollow">Review Format</h1>
-    <?php echo get_field('review_format_text'); ?>
+    <div class="artist-image artist-image--large" style="background:url('<?php echo get_field('image'); ?>');"></div>
+    <h1 class="hollow"><?php echo get_field('name'); ?></h1>
+    <?php echo get_field('description'); ?>
   </div>
+
 </div>
