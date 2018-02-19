@@ -25,7 +25,7 @@ $name = get_field('name');
       </div>
       <div class="menu-col">
         <ul class="menu">
-          <li><a href="/home">Reviews</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="#">facebook</a></li>
