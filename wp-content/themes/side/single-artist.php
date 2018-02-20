@@ -20,12 +20,13 @@ $name = get_field('name');
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
+        <a href="<?php echo $artistLink; ?>"><img src="<?php echo get_field('image'); ?>" class="album-art" /></a>
         <h1>Artist</h1>
         <h1>Profile</h1>
       </div>
       <div class="menu-col">
         <ul class="menu">
-          <li><a href="/home">Reviews</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="#">facebook</a></li>
@@ -36,9 +37,10 @@ $name = get_field('name');
     </div>
   </div>
   <div class="full center">
-    <div class="artist-image artist-image--large" style="background:url('<?php echo get_field('image'); ?>');"></div>
-    <h1 class="hollow"><?php echo $name; ?></h1>
-    <?php echo get_field('description'); ?>
+    <div class="artist-info">
+      <h1 class="hollow"><?php echo $name; ?></h1>
+      <?php echo get_field('description'); ?>
+    </div>
     <h2>Reviews</h2>
     <?php 
 
