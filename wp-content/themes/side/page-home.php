@@ -14,7 +14,7 @@
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
-        <h1>sideAsideB</h2>
+        <h1><a href="/home">sideAsideB</a></h1>
       </div>
       <div class="menu-col">
         <ul class="menu">
