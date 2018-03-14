@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="full">
+  <div class="full center">
     <div class="half-col center">
       <h1 class="hollow">Reviews</h1>
       <ul class="reviews-list">

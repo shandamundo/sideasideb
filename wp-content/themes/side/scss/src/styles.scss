@@ -365,6 +365,14 @@ p {
   .review-template-default .left-col {
     height: 235px;
   }
+
+  .album-art {
+    width: 180px;
+  }
+
+  .container.main {
+    width: calc(100vw - 26px);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -458,6 +466,11 @@ p {
   }
 
   .reviews-list {
-    padding: 5px;
+    padding: 0px;
   }
+
+  .reviews-list li {
+    margin: 0;
+  }
+
 }
