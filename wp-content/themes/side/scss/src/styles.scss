@@ -170,9 +170,7 @@ p {
 }
 
 .stamp.rt {
-  bottom: 20px;
-  position: absolute;
-  width: calc(100% - 55px);
+  margin-top: 15px;
 }
 
 .stamp .hollow {
@@ -201,7 +199,7 @@ p {
   background-repeat: no-repeat!important;
   background-size: cover!important;
   display: block;
-  filter: grayscale(100%);
+  //filter: grayscale(100%);
   float: left;
   height: 100px;
   position: relative;
@@ -211,7 +209,7 @@ p {
 }
 
 .latest-list__card:hover {
-  filter: grayscale(0%);
+  //filter: grayscale(0%);
 }
 
 .latest-list__card a {
@@ -319,6 +317,14 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+  body.home .half {
+    height: calc(100vh - 196px);
+  }
+
+  .latest {
+    height: 49vh;
+  }
+
   .main {
     height: auto;
     min-height: 100%;
@@ -396,6 +402,18 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .container.main {
+    width: auto;
+  }
+
+  body.home .half {
+    height: auto;
+  }
+
+  .latest {
+    height: auto;
+  }
+
   .half {
     width: 100%;
   }
@@ -458,6 +476,10 @@ p {
     height: 100px!important;
     opacity: 0;
   }
+
+  .latest-list__card {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -474,7 +496,8 @@ p {
   }
 
   .latest-list__card {
-    width: 100%;
+    height: 50vw;
+    width: 50%;
   }
 
   .social {
