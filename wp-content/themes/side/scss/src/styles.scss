@@ -259,12 +259,11 @@ p {
 .reviews-list li a {
   display: block;
   height: 100%;
-  left: 0px;
-  line-height: 150px;
+  left: 5%;
   position: absolute;
   text-align: center;
-  top: 0px;
-  width: 100%;
+  top: 50px;
+  width: 90%;
 }
 
 .half__button {
@@ -317,8 +316,17 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+  .full::-webkit-scrollbar-track, .half--review::-webkit-scrollbar-track {
+      box-shadow: 0px 0px 0px $primary;
+  }
+
   body.home .half {
     height: calc(100vh - 196px);
+  }
+
+  body.page-template-page-reviews .full {
+    height: calc(100vh - 222px);
+    overflow-y: scroll;
   }
 
   .latest {
@@ -406,6 +414,10 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  body.page-template-page-reviews .container.main {
+    width: calc(100vw - 26px);
+  }
+
   .container.main {
     width: auto;
   }
@@ -431,7 +443,7 @@ p {
   }
 
   .reviews-list li {
-    width: 100%;
+    width: 50%;
   }
   
   .half--review {

@@ -45,7 +45,6 @@
           $url = get_permalink($id);
           $album = get_field('album', $id);
           $albumName = get_field('name', $album[0]->ID);
-
           $artist = get_field('artist', $album[0]->ID);
           $artistID = $artist[0]->ID;
           $artistName = get_field('name', $artistID);
