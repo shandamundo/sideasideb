@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="half">
-    <div class="half-col center">
+    <div class="half-col center latest-col">
       <div class="padded">
         <div class="stamp">
           <h1 class="hollow">Latest</h1>
@@ -70,21 +70,10 @@
             }
             
             ?>
-            <!-- <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
-              <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li>
-            </li>
-            <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
-              <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li>
-            </li>
-            <li class="latest-list__card" style="background: url('https://f4.bcbits.com/img/0006708744_10.jpg')">
-              <span class="latest-list__name">Mitski - Puberty 2</span>
-            </li> -->
           </ul>
-          <div class="stamp rt">
-            <h1 class="hollow">Reviews</h1>
-          </div>
+        </div>
+        <div class="stamp rt">
+          <h1 class="hollow">Reviews</h1>
         </div>
       </div>  
     </div>

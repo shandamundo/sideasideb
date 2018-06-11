@@ -169,8 +169,25 @@ p {
   background-color: $primary;
 }
 
+.stamp.rt {
+  bottom: 20px;
+  position: absolute;
+  width: calc(100% - 55px);
+}
+
 .stamp .hollow {
   display: inline;
+}
+
+.latest-col .stamp {
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.latest {
+  height: 60vh;
+  margin-top: 15px;
+  overflow-y: scroll;
 }
 
 .latest-list {
@@ -186,9 +203,9 @@ p {
   display: block;
   filter: grayscale(100%);
   float: left;
-  height: 29vh;
+  height: 100px;
   position: relative;
-  width: 50%;
+  width: 33.333%;
 
   @include transition(0.3s);
 }
@@ -208,7 +225,7 @@ p {
   background: $black;;
   bottom: 0px;
   color: $secondary;
-  display: block;
+  display: none;
   font-size: 14px;
   font-weight: 800;
   left: 0px;
@@ -284,6 +301,9 @@ p {
 }
 
 .review-thumb {
+  float: left;
+  display: block;
+  margin: 10px 0px;
   width: 33.333%;
 }
 
