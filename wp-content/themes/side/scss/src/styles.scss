@@ -396,6 +396,10 @@ p {
     width: 180px;
   }
 
+  body.page-template-page-about .container.main {
+    width: auto;
+  }
+
   .container.main {
     width: calc(100vw - 26px);
   }
