@@ -201,7 +201,7 @@ p {
   display: block;
   //filter: grayscale(100%);
   float: left;
-  height: 100px;
+  height: 10vw;
   position: relative;
   width: 33.333%;
 
@@ -257,13 +257,15 @@ p {
 }
 
 .reviews-list li a {
-  display: block;
   height: 100%;
-  left: 5%;
+  left: 0px;
   position: absolute;
-  text-align: center;
-  top: 50px;
-  width: 90%;
+  top: 0px;
+  width: 100%;
+}
+
+.reviews-list__thumb {
+  @include centerer;
 }
 
 .half__button {
@@ -411,23 +413,50 @@ p {
   .container.main {
     width: calc(100vw - 26px);
   }
-}
 
-@media screen and (max-width: 767px) {
-  body.page-template-page-reviews .container.main {
-    width: calc(100vw - 26px);
+  body.single-artist .left-col .logo-col {
+    float: left;
+    display: block;
+    width: 80%;
+  }
+  
+
+  body.single-artist .album-art,
+  body.single-review .album-art {
+    display: none;
   }
 
-  .container.main {
-    width: auto;
+  body.single-artist .left-col h1,
+  body.single-review .left-col h1 {
+    display: block;
+    float: left;
+    margin-bottom: 0px;
   }
 
-  body.home .half {
-    height: auto;
+  body.single-artist .left-col .logo-col h1:last-child,
+  body.single-review .left-col .logo-col h1:last-child {
+    margin-left: 10px;
   }
 
-  .latest {
-    height: auto;
+  body.single-artist .left-col .menu-col,
+  body.single-review .left-col .menu-col {
+    clear: both;
+    display: block;
+    float: left;
+    width: 80%;
+  }
+
+  body.single-artist .full.center {
+    height: calc(100vh - 222px);
+    overflow-y: auto;
+  }
+
+  body.single-review .container.main {
+    width: calc(100vw - 42px);
+  }
+
+  body.single-review {
+    overflow-x: hidden;
   }
 
   .half {
@@ -438,27 +467,12 @@ p {
     display: inline-block;
   }
 
-  .reviews-list {
-    padding: 25px;
-  }
-
-  .reviews-list li {
-    width: 50%;
-  }
-  
-  .half--review {
-    overflow-y: visible;
-    z-index: 1;
-
-    @include transition(0.45s);
-  }
-
-  body.single-review {
-    overflow-x: hidden;
-  }
-
   .half--review .hollow {
     margin-top: 60px;
+  }
+
+  .half--review {
+    padding: 10px 0px;
   }
 
   .half--b {
@@ -489,8 +503,42 @@ p {
   }
 
   .half--a.hide {
-    height: 100px!important;
+    //height: 100px!important;
     opacity: 0;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  body.page-template-page-reviews .container.main {
+    width: calc(100vw - 26px);
+  }
+
+  .container.main {
+    width: auto;
+  }
+
+  body.home .half {
+    height: auto;
+  }
+
+  .latest {
+    height: auto;
+  }
+
+  .reviews-list {
+    padding: 25px;
+  }
+
+  .reviews-list li {
+    width: 75%;
+  }
+  
+  .half--review {
+    overflow-y: visible;
+    z-index: 1;
+
+    @include transition(0.45s);
   }
 
   .latest-list__card {
@@ -512,7 +560,7 @@ p {
   }
 
   .latest-list__card {
-    height: 50vw;
+    height: calc(50vw - 30px);
     width: 50%;
   }
 
@@ -532,4 +580,17 @@ p {
     margin: 0;
   }
 
+  body.single-artist .left-col h1 {
+    font-size: 24px;
+  }
+
+  body.single-artist .center h2 {
+    margin: 40px 0px 30px;
+  }
+
+  .review-thumb {
+    height: calc(100vw - 40px);
+    margin: 0;
+    width:  calc(100vw - 40px);
+  }
 }

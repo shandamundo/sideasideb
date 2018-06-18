@@ -50,7 +50,11 @@
           $artistName = get_field('name', $artistID);
 
           echo '<li>
-                  <a href="'.$url.'">'.$artistName.' - '.$albumName.'</a>
+                  <a href="'.$url.'">
+                    <span class="reviews-list__thumb">
+                  <b style="text-decoration: underline;">'.$artistName.'</b><br/>'.$albumName.'
+                    </span>
+                  </a>
                 </li>';
         }
         
