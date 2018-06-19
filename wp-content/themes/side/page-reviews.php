@@ -28,7 +28,7 @@
       </div>
     </div>
   </div>
-  <div class="full">
+  <div class="full center">
     <div class="half-col center">
       <h1 class="hollow">Reviews</h1>
       <ul class="reviews-list">
@@ -45,13 +45,16 @@
           $url = get_permalink($id);
           $album = get_field('album', $id);
           $albumName = get_field('name', $album[0]->ID);
-
           $artist = get_field('artist', $album[0]->ID);
           $artistID = $artist[0]->ID;
           $artistName = get_field('name', $artistID);
 
           echo '<li>
-                  <a href="'.$url.'">'.$artistName.' - '.$albumName.'</a>
+                  <a href="'.$url.'">
+                    <span class="reviews-list__thumb">
+                  <b style="text-decoration: underline;">'.$artistName.'</b><br/>'.$albumName.'
+                    </span>
+                  </a>
                 </li>';
         }
         
