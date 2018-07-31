@@ -319,6 +319,24 @@ p {
   width: calc(100% - 50px);
 }
 
+.single-review__mobile-button {
+  background-color: $primary;
+  border: none;
+  border-radius: 50%;
+  bottom: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 30px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  width: 50px;
+}
+
+.single-review__mobile-button:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;
@@ -460,7 +478,8 @@ p {
   }
 
   body.single-review .container.main {
-    width: calc(100vw - 42px);
+    overflow-x: hidden;
+    width: calc(100vw - 15px);
   }
 
   body.single-review {
@@ -481,38 +500,6 @@ p {
 
   .half--review {
     padding: 10px 0px;
-  }
-
-  .half--b {
-    right: -100vw;
-    overflow: visible;
-    position: absolute;
-    top: 247px;
-    z-index:2;
-
-    &:before {
-      content: '';
-      background-color: white;
-      height: 99.5%;
-      left: 2%;
-      position: absolute;
-      top: 5px;
-      width: 96%;
-      z-index: -1;
-    }
-  }
-
-  .half--a {
-    overflow: hidden;
-  }
-
-  .half--b.active {
-    right: 0px;
-  }
-
-  .half--a.hide {
-    //height: 100px!important;
-    opacity: 0;
   }
 
 }
@@ -551,6 +538,10 @@ p {
 
   .latest-list__card {
     height: 200px;
+  }
+
+  .social {
+    top: 130px;
   }
 }
 

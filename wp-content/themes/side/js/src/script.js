@@ -2,33 +2,28 @@ import $  from 'jquery';
 
 $(document).ready(() => {
 
-//mobile switch review buttons
-let buttonRight = $('.half__button--right'),
-    buttonLeft = $('.half__button--left'),
-    buttonBottom = $('.half__button--bottom');
+  const aOffset = $('.half--a').offset().top;
+  const bOffset = $('.half--b').offset().top;
 
-buttonRight.click((e) => {
-  $('.half--b').addClass('active');
-  $('.half--a').addClass('hide');
-});
+  let aIsActive = true;
 
-buttonLeft.click((e) => {
-  $('.half--b').removeClass('active');
-  $('.half--a').removeClass('hide');
-});
+  $(window).on('scroll', () => {
+    const windowOffset = $(window).scrollTop();
+    if(windowOffset > bOffset){
+      $('.single-review__mobile-button').html('A');
+      aIsActive = false;
+    } else {
+      console.log('setting A active');
+      $('.single-review__mobile-button').html('B');
+      aIsActive = true;
+    }
+  });
 
-buttonBottom.click(() => {
-  reviewA.css('height', '');
-  $('html,body').animate({ scrollTop: "0vh" }, 'slow');
-});
+  $('.single-review__mobile-button').on('click', () => {
+    $('html, body').animate({ scrollTop: $(`.half--${aIsActive ? 'b' : 'a'}`).offset().top + 10 }, 1000, () => {
+      // callback
+    });
+  });
 
-//Set heights on reviews for mobile devices to prevent overflow issues
-let highestReview,
-    reviewA = $('.half--a'),
-    reviewB = $('.half--b');
-
-highestReview = reviewA.outerHeight() > reviewB.outerHeight() ? reviewA : reviewB;
-
-reviewA.css('height', highestReview.outerHeight());
 
 });

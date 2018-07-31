@@ -8,7 +8,7 @@ import rename from 'gulp-rename';
 import cleanCSS from 'gulp-clean-css';
 import babel from 'gulp-babel';
 import gulpif from 'gulp-if';
-import browserify from 'gulp-browserify';
+import bro from 'gulp-bro';
 import autoprefix from 'gulp-autoprefixer';
 import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
@@ -26,17 +26,25 @@ const themeURL = './wp-content/themes/side/';
 
 
 gulp.task('js', () => {
-  return gulp.src(`${themeURL}js/src/*.js`)
-    .pipe(browserify({
-      insertGlobals: true,
-    }))
-    .pipe(concat('bundle.min.js'))
-    .pipe(gulpif(ENVIRONMENT, sourcemaps.init()))
-    .pipe(babel())
-    .pipe(gulpif(ENVIRONMENT, sourcemaps.write()))
-    .pipe(gulpif(!ENVIRONMENT, uglify()))
-    .pipe(rename('bundle.min.js'))
-    .pipe(gulp.dest(`${themeURL}js/dist`));
+  // return gulp.src('./wp-content/themes/side/js/src/**/*.js')
+  //   .pipe(browserify({
+  //     insertGlobals: true,
+  //   }))
+  //   .pipe(concat('bundle.min.js'))
+
+  //   
+  //   
+  //   .pipe(rename('bundle.min.js'))
+  //   .pipe(gulp.dest('./wp-content/themes/side/js/dist'));
+
+    return gulp.src('./wp-content/themes/side/js/src/**/*.js')
+      .pipe(bro())
+      .pipe(gulp.dest('./wp-content/themes/side/js/dist'))
+      .pipe(sourcemaps.init())
+      .pipe(babel())
+      .pipe(sourcemaps.write())
+      .pipe(rename('bundle.min.js'))
+      .pipe(gulp.dest('./wp-content/themes/side/js/dist'));
 });
 
 gulp.task('sass', () => {
