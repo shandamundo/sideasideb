@@ -74,7 +74,7 @@ p {
 .col {
   display: inline-block;
   float: left;
-  height: 100%; 
+  height: 90vh;
   position: relative;
   width: 100%;
 }
@@ -90,7 +90,7 @@ p {
 
 .half {
   float: left;
-  height: 100%;
+  height: 90vh;
   width: 37.5%;
 }
 
@@ -102,7 +102,7 @@ p {
 
 .half-col {
   float: left;
-  height: 100%;
+  height: 90vh;
   position: relative;
   width: 100%;
 }
@@ -118,6 +118,14 @@ p {
 .half--review {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.half--review h4 {
+  margin-bottom: 10px;
+}
+
+.half--review__point p {
+  margin-top: 15px;
 }
 
 .padded {
@@ -311,6 +319,25 @@ p {
   width: calc(100% - 50px);
 }
 
+.single-review__mobile-button {
+  background-color: $primary;
+  border: none;
+  border-radius: 50%;
+  bottom: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: none;
+  font-size: 30px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  width: 50px;
+}
+
+.single-review__mobile-button:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;
@@ -452,7 +479,8 @@ p {
   }
 
   body.single-review .container.main {
-    width: calc(100vw - 42px);
+    overflow-x: hidden;
+    width: auto;
   }
 
   body.single-review {
@@ -475,38 +503,9 @@ p {
     padding: 10px 0px;
   }
 
-  .half--b {
-    right: -100vw;
-    overflow: visible;
-    position: absolute;
-    top: 247px;
-    z-index:2;
-
-    &:before {
-      content: '';
-      background-color: white;
-      height: 99.5%;
-      left: 2%;
-      position: absolute;
-      top: 5px;
-      width: 96%;
-      z-index: -1;
-    }
+  .single-review__mobile-button {
+    display: block;
   }
-
-  .half--a {
-    overflow: hidden;
-  }
-
-  .half--b.active {
-    right: 0px;
-  }
-
-  .half--a.hide {
-    //height: 100px!important;
-    opacity: 0;
-  }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -543,6 +542,10 @@ p {
 
   .latest-list__card {
     height: 200px;
+  }
+
+  .social {
+    top: 130px;
   }
 }
 

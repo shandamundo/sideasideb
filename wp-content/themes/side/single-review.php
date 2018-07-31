@@ -28,7 +28,7 @@
 ?>
 
 <div class="container main">
-
+  <button class="single-review__mobile-button">B</button>
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
@@ -39,6 +39,7 @@
       <div class="menu-col">
         <ul class="menu">
           <li><a href="/reviews">Reviews</a></li>
+          <li><a href="/">Home</a></li>
         </ul>
         <ul class="social">
           <li><a href="#">facebook</a></li>
@@ -53,36 +54,45 @@
     $authorInfoB = get_field('side_b_author');
     ?>
     <div class="half center half--review half--a">
-        <span class="half__button half__button--right">Side B ></span>
         <h1 class="hollow">Side A</h1>
         <h3 class="author"><?php echo $authorInfoA['user_firstname'] . ' ' . $authorInfoA['user_lastname']; ?></h3>
         <p><?php echo get_field('side_a_intro'); ?></p>
         <h4>What I Liked</h4>
-        <?php echo get_field('side_a_liked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_liked'); ?>
+        </div>
         <h4>What I Disliked</h4>
-        <?php echo get_field('side_a_disliked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_disliked'); ?>
+        </div>
         <h4>Final Thoughts</h4>
-        <?php echo get_field('side_a_final'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_final'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
         <h5>Sounds like</h5>
         <?php echo get_field('side_a_sounds'); ?>
-        <span class="half__button half__button--right half__button--bottom">Side B ></span>
     </div>
     <div class="half center half--review half--b">
-        <span class="half__button half__button--left">< Side A</span>
         <h1 class="hollow">Side B</h1>
         <h3 class="author"><?php echo $authorInfoB['user_firstname'] . ' ' . $authorInfoB['user_lastname']; ?></h3>
         <p><?php echo get_field('side_b_intro'); ?></p>
         <h4>What I Liked</h4>
-        <?php echo get_field('side_b_liked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_liked'); ?>
+        </div>
         <h4>What I Disliked</h4>
-        <?php echo get_field('side_b_disliked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_disliked'); ?>
+        </div>
         <h4>Final Thoughts</h4>
-        <?php echo get_field('side_b_final'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_final'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
         <h5>Sounds like</h5>
         <?php echo get_field('side_b_sounds'); ?>
-        <span class="half__button half__button--left half__button--bottom">< Side A</span>
     </div>
-
 </div>
+<script>
+</script>
