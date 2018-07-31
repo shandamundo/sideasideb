@@ -544,8 +544,12 @@ p {
     height: 200px;
   }
 
-  .social {
+  body.single-review .social {
     top: 130px;
+  }
+
+  .social {
+    top: 10px;
   }
 }
 
