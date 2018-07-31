@@ -90,7 +90,7 @@ p {
 
 .half {
   float: left;
-  height: 100%;
+  height: 90vh;
   width: 37.5%;
 }
 
@@ -118,6 +118,14 @@ p {
 .half--review {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.half--review h4 {
+  margin-bottom: 10px;
+}
+
+.half--review__point p {
+  margin-top: 15px;
 }
 
 .padded {

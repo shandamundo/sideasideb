@@ -58,11 +58,17 @@
         <h3 class="author"><?php echo $authorInfoA['user_firstname'] . ' ' . $authorInfoA['user_lastname']; ?></h3>
         <p><?php echo get_field('side_a_intro'); ?></p>
         <h4>What I Liked</h4>
-        <?php echo get_field('side_a_liked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_liked'); ?>
+        </div>
         <h4>What I Disliked</h4>
-        <?php echo get_field('side_a_disliked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_disliked'); ?>
+        </div>
         <h4>Final Thoughts</h4>
-        <?php echo get_field('side_a_final'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_final'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
         <h5>Sounds like</h5>
         <?php echo get_field('side_a_sounds'); ?>
@@ -74,11 +80,17 @@
         <h3 class="author"><?php echo $authorInfoB['user_firstname'] . ' ' . $authorInfoB['user_lastname']; ?></h3>
         <p><?php echo get_field('side_b_intro'); ?></p>
         <h4>What I Liked</h4>
-        <?php echo get_field('side_b_liked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_liked'); ?>
+        </div>
         <h4>What I Disliked</h4>
-        <?php echo get_field('side_b_disliked'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_disliked'); ?>
+        </div>
         <h4>Final Thoughts</h4>
-        <?php echo get_field('side_b_final'); ?>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_final'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
         <h5>Sounds like</h5>
         <?php echo get_field('side_b_sounds'); ?>
