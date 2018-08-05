@@ -29,9 +29,8 @@ $name = get_field('name');
           <li><a href="/reviews">All Reviews</a></li>
         </ul>
         <ul class="social">
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">instagram</a></li>
+          <li><a href="https://www.facebook.com/Side-A-Side-B-1053932354780374" target="_blank">facebook</a></li>
+          <li><a href="https://www.instagram.com/sideasidebblog/" target="_blank">instagram</a></li>
         </ul>
       </div>
     </div>
@@ -88,7 +87,7 @@ $name = get_field('name');
 
         echo '<div class="review-thumb">
               <a href="'.$url.'">
-              <img src="'.$albumArt.'" alt="'.$albumName.'"/>
+              <img src="'.$albumArt.'" alt="'.$albumName.'" class="album-art"/>
               </a>
               </div>';
   
