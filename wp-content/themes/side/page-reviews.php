@@ -21,7 +21,7 @@
           <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
-          <li><a href="https://www.facebook.com/Side-A-Side-B-1053932354780374" target="_blank">facebook</a></li>
+          <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
           <li><a href="https://www.instagram.com/sideasidebblog/" target="_blank">instagram</a></li>
         </ul>
       </div>
