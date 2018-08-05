@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin\Menu
  */
 
@@ -55,7 +57,8 @@ class WPSEO_Network_Admin_Menu implements WPSEO_WordPress_Integration {
 				$this->menu->get_page_identifier(),
 				'Yoast SEO: ' . __( 'Edit Files', 'wordpress-seo' ),
 				__( 'Edit Files', 'wordpress-seo' ),
-				'delete_users', 'wpseo_files',
+				'delete_users',
+				'wpseo_files',
 				$page_callback
 			);
 		}

@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Internals\Options
  */
 
@@ -46,7 +48,6 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 		'wpseo_canonical'             => '',
 		'wpseo_bctitle'               => '',
 		'wpseo_noindex'               => 'default',
-		'wpseo_sitemap_include'       => '-',
 		'wpseo_focuskw'               => '',
 		'wpseo_linkdex'               => '',
 		'wpseo_content_score'         => '',
@@ -73,21 +74,6 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 		'index'   => '',
 		'noindex' => '',
 	);
-
-	/**
-	 * @var  array  Available sitemap include options.
-	 *        Used for form generation and input validation.
-	 *
-	 * @static
-	 *
-	 * {@internal Labels (translation) added on admin_init via WPSEO_Taxonomy::translate_meta_options().}}
-	 */
-	public static $sitemap_include_options = array(
-		'-'      => '',
-		'always' => '',
-		'never'  => '',
-	);
-
 
 	/**
 	 * Add the actions and filters for the option.
@@ -280,12 +266,6 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 					}
 					break;
 
-				case 'wpseo_sitemap_include':
-					if ( isset( $meta_data[ $key ], self::$sitemap_include_options[ $meta_data[ $key ] ] ) ) {
-						$clean[ $key ] = $meta_data[ $key ];
-					}
-					break;
-
 				case 'wpseo_canonical':
 					if ( isset( $meta_data[ $key ] ) && $meta_data[ $key ] !== '' ) {
 						$url = WPSEO_Utils::sanitize_url( $meta_data[ $key ] );
@@ -468,9 +448,11 @@ class WPSEO_Taxonomy_Meta extends WPSEO_Option {
 	 */
 	public static function get_meta_without_term( $meta ) {
 		$term = $GLOBALS['wp_query']->get_queried_object();
+		if ( ! $term || empty( $term->taxonomy ) ) {
+			return false;
+		}
 
 		return self::get_term_meta( $term, $term->taxonomy, $meta );
-
 	}
 
 	/**
