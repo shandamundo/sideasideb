@@ -69,7 +69,7 @@ $singleArt = get_field('single_art')
             '<li>
               <span class="rating">'.$review['rating'].'</span>
               <p>'.$review['text'].'</p>
-              <h5>'.$review['reviewer']->display_name.'</h5>
+              <h5>'.$review['reviewer']->user_firstname. ' ' . $review['reviewer']->user_lastname.'</h5>
             </li>';
         }
         ?>
