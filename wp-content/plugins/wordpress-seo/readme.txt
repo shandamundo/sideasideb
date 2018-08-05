@@ -5,8 +5,8 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: SEO, XML sitemap, Google Search Console, Content analysis, Readability
 Requires at least: 4.8
-Tested up to: 4.9.4
-Stable tag: 6.3.1
+Tested up to: 4.9.7
+Stable tag: 7.9
 Requires PHP: 5.2.4
 
 Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.
@@ -15,7 +15,7 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 
 ### Yoast SEO: the #1 WordPress SEO plugin
 
-Need an SEO plugin that helps you reach for the stars? Yoast SEO is the original WordPress SEO plugin since 2008. It is the favorite tool of millions of users, ranging from the bakery around the corner to some of the most popular sites on the planet. With Yoast SEO, you get a solid toolset that helps you aim for that number one spot in the search results. Yoast: SEO for everyone.
+Need some help with your search engine optimization? Need an SEO plugin that helps you reach for the stars? Yoast SEO is the original WordPress SEO plugin since 2008. It is the favorite tool of millions of users, ranging from the bakery around the corner to some of the most popular sites on the planet. With Yoast SEO, you get a solid toolset that helps you aim for that number one spot in the search results. Yoast: SEO for everyone.
 
 Yoast SEO does everything in its power to please both visitors and search engine spiders. How? Below you’ll find a small sampling of the powers of Yoast SEO:
 
@@ -62,7 +62,7 @@ Bug reports for Yoast SEO are [welcomed on GitHub](https://github.com/Yoast/word
 
 ### Further Reading
 
-For more info, check out the following articles:
+For more info on search engine optimization, check out the following:
 
 * The [Yoast SEO Plugin](https://yoa.st/1v8) official homepage.
 * The [Yoast SEO Knowledgebase](https://yoa.st/1va).
@@ -98,71 +98,63 @@ You'll find answers to many of your questions on [kb.yoast.com](https://yoa.st/1
 == Screenshots ==
 
 1. The Yoast SEO plugin general meta box. You'll see this on edit post pages, for posts, pages and custom post types.
-2. The fully configurable XML sitemap for Yoast SEO.
-3. Easily import SEO data from other SEO plugins like All In One SEO pack, HeadSpace2 SEO and wpSEO.de.
-4. Example of the SEO analysis functionality.
-5. Example of the readability analysis functionality.
-6. The advanced section of the Yoast SEO meta box.
+2. Example of the SEO analysis functionality.
+3. Example of the readability analysis functionality.
+4. Overview of site-wide SEO problems and possible improvements.
+5. Control over which features you want to use.
+6. Easily import SEO data from other SEO plugins like All In One SEO pack, HeadSpace2 SEO and wpSEO.de.
 
 == Changelog ==
 
-= 6.3.1 =
-Release Date: February 20th, 2018
-
-Bugfixes:
-
-* Fixes a bug where a non-existing JavaScript `chunk` file was loaded, causing a console error. This only affected users using a locale different than `en`.
-
-= 6.3.0 =
-Release Date: February 13th, 2018
-
-Bugfixes:
-
-* Reverts the shortlink in the HTML comment back to the hard link it was before.
-* Fixes a bug where the Local SEO for WooCommerce extension was not shown on the licenses page.
-* Fixes a bug where the `current_user_can()` function was not called with the post ID as argument.
-* Fixes a bug where the auto-generated meta descriptions were not using the new 320 characters limitation.
-* Fixes a bug where specific external links were not filtered from the post_type sitemap.
-* Fixes a bug where trashed posts were displayed in the bulk editor overview.
-* Fixes a bug where old meta values were not deleted during import.
-* Fixes a bug where only 10 posts when executing meta robots import from wpSEO.de.
-* Clears the sitemap cache when the Site URL is changed.
+= 7.9.0 =
+Release Date: July 24th, 2018
 
 Enhancements:
+* Introduces the collapsible sections to all the tabs in Search Appearance.
+* Improves accessibility of the collapsible sections in Search Appearance.
 
-* Adds an importer for the SEO Ultimate plugin SEO data.
-* Adds an importer for the SEOpressor plugin SEO data.
-* Adds links to explanatory articles on the features tab.
-* Adds additional explanation for entries on the features tab.
-* Improves Open Graph copy for Facebook and Twitter in the Social settings to better explain what it does.
-* Improves Content Analysis and Publish box copy for better translations.
-* Applies design changes to the Help Center support tab for Premium.
+Bugfixes:
+* Fixes a bug where archive settings for post types aren't shown on the search appearance page when the `has_archive` for that post type contains an archive slug. Props to [schurig](https://github.com/schurig).
+* Fixes a bug where a notice ("Notice: Trying to get property of non-object") is given when the `$term->taxonomy` isn't set before it is used. Props to [nesinervink](https://github.com/nesinervink), [bainternet](https://github.com/bainternet).
+* Fixes a bug where an uppercased encode URI isn't redirected to the category. Props to [dawnbirth](https://github.com/dawnbirth).
+* Fixes a bug where HTML entities were not always decoded in the Snippet Variables.
+* Fixes a bug where custom field labels would be separated by spaces in the classic editor, but in Gutenberg they would be separated by underscores instead.
+* Fixes a bug where the conversion of `&#039;`, which is PHP's HTML entity for the apostrophy, did not happen.
+* Fixes a bug where the same notification is shown multiple times when trashing multiple posts.
+* Fixes a bug where a possibly non-existent key would be retrieved when generating the `article:section` OpenGraph tag. Props to [mikeschinkel](https://github.com/mikeschinkel).
+* Fixes a bug in the UI that happend when `do_shortcode` was run on category descriptions in the admin list. Additionally, fixes rendering of shortcodes in category descriptions on the frontend.
+* Fixes a bug where saved templates in Search Appearance would be saved incorrectly into the database, resulting in them never being loaded when editing a post, page, etc. This meant that the default template would always be used.
+* Fixes a bug where the "Tagline" / `%%sitedesc%%` snippet editor variable was not selectable in the Search Appearance settings.
+* Fixes a bug where the newsletter signup in the configuration wizard would not work.
 
 Other:
+* Moves some snippet variables to only appear within specific editors. Adds a filter `wpseo_editor_specific_replace_vars` to make this pluggable.
+* Adds the white background to the template of media on the Search Appearance page.
+* Changes feedback in the keyword density assessment to make it more explicit that synonyms are not taken into consideration when calculating the score.
+* Shows a notification with the message that you should check your post type archive settings when these are possibly reset to their defaults in 7.7 or 7.8.
 
-* Removes "meta keywords" from the plugin as this has had no search result value for at least 7 years.
-* Removes the "noindex subpages" feature as Google has gotten much better at paginated series, and it's now actually detrimental to use.
-* Removes the "Other" tab from the Titles & Metas settings screen, as all options have been moved or removed.
-* Security hardening.
-
-= 6.2.0 =
-Release Date: January 23rd, 2018
+= 7.8.0 =
+Release Date: July 10th, 2018
 
 Enhancements:
-
-* Allows more strings to be translated.
-* Adds the passive voice assessment for French.
-* Adds the passive voice assessment for Spanish.
-* Simplifies the feedback message for the assessment that checks whether subheadings contain the keyword.
+* Improves the way that the OpenGraph is determined for front pages, especially in the case of static front pages.
+* Adds links to relevant articles to all SEO assessments.
+* Adds Flesch Reading Ease assessment for French.
+* Adds Flesch Reading Ease assessment for Spanish.
+* Adds passive voice assessment for Italian.
 
 Bugfixes:
+* Fixes a bug where images from password protected posts could potentially end up in OpenGraph image tags.
+* Fixes a bug where very old notifications could not be be dismissed or restored.
+* Fixes a bug where the `Insert snippet variable` button alignment was incorrect.
+* Fixes a bug where the snippet variables had a different label in the Search Appearance settings compared to the snippet variables when writing a post, pages and taxonomies.
+* Fixes a bug where instances of the same keyword with different kinds of apostrophes (e.g., brain’s and brain's) were not recognized as the same. This affects the following assessments: keyword in meta description, keyword in subheading, keyword in first paragraph, keyword in title and keyword in URL.
+* Fixes a bug where the custom set breadcrumb title for the WooCommerce Shop page wasn't used.
 
-* Security hardening through stricter code checks.
-* Reduces the number of times the content analysis is refreshed on page load.
-* Fixes a bug where relative URLs were not counted as internal links in the internal link assessment.
-* Fixes a bug where Premium users would be shown ads when following a certain path through the SEO menu.
-* Fixes a bug where the method of setting the title and meta description templates for the WooCommerce shop page would not work anymore.
+Other:
+* Adds a reminder message to create a redirect if a user deletes a category or tag.
+* Removes a banner spot in the admin.
 
 = Earlier versions =
 
-For the changelog of earlier versions, please refer to the separate changelog.txt file.
+For the changelog of earlier versions, please refer to https://yoa.st/yoast-seo-changelog
