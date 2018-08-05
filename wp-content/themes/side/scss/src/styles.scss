@@ -184,6 +184,10 @@ p {
   text-transform: uppercase;
 }
 
+.hollow--sml {
+  font-size: 30px;
+}
+
 .stamp {
   border: $border;
   background-color: $primary;
@@ -377,6 +381,86 @@ p {
 
 .single-review__mobile-button:focus {
   outline: none;
+}
+
+.single-track__info,
+.single-track__snapshot {
+  display: block;
+  float: left;
+  padding: 0px 30px;
+}
+
+.single-track__info {
+  margin-bottom: 25px;
+  width: calc(35% - 60px);
+  text-align: left;
+}
+
+.single-track__info .hollow {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.single-track__snapshot {
+  width: calc(65% - 60px);
+}
+
+.single-track__snapshot h2 {
+  font-size: 22px;
+  margin-top: 45px;
+}
+
+.single-track__spotify {
+  margin-top: 25px;
+  padding: 0px 30px;
+}
+
+.single-track__body {
+  text-align: left;
+}
+
+.single-track__micro-review-list {
+  column-count: 2;
+  list-style-type: none;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+.single-track__micro-review-list li {
+  border-bottom: 5px dotted $primary;
+  display: inline-block;
+  padding: 15px 0px 7.5px 0px;
+  text-align: left;
+  width: 25vw;
+}
+
+.single-track__micro-review-list p {
+  display: block;
+  font-size: 12px;
+  float: left;
+  margin-top: 0px;
+  width: 60%;
+}
+
+.single-track__micro-review-list h5 {
+  display: block;
+  clear: both;
+  float: right;
+  margin: 0;
+}
+
+.single-track__micro-review-list .rating {
+  background: $tertiary;
+  border-radius: 50%;
+  color: $secondary;
+  display: block;
+  float: left;
+  font-size: 18px;
+  font-weight: 800;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
 }
 
 @media screen and (max-width: 1999px) {
