@@ -631,6 +631,22 @@ p {
   .single-review__mobile-button {
     display: block;
   }
+
+  body.single-single .album-art {
+    display: none;
+  }
+
+  body.single-single .container.main {
+    width: calc(100vw - 42px);
+  }
+  
+  .single-track__micro-review-list li {
+    width: 35vw;
+  }
+
+  body.single-single .left-col .col {
+    height: 0vh;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -675,6 +691,39 @@ p {
 
   .social {
     top: 10px;
+  }
+
+  .single-track__micro-review-list {
+    column-count: 1;
+  }
+
+  .single-track__micro-review-list li {
+    width: 75vw;
+  }
+
+  .single-track__info,
+  .single-track__snapshot {
+    padding: 0px 25px;
+    width: calc(100% - 50px);
+  }
+
+  .single-track__spotify {
+    padding: 0px 25px;
+    width: calc(100% - 50px);
+  }
+
+  .single-track__info {
+    margin-bottom: 0px;
+  }
+
+  .single-track__snapshot {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .single-track__snapshot h2 {
+    margin-top: 0px;
+    text-align: left;
   }
 }
 
@@ -724,5 +773,19 @@ p {
     height: calc(100vw - 40px);
     margin: 0;
     width:  calc(100vw - 40px);
+  }
+
+  body.single-single .container.main {
+    width: 100%;
+  }
+
+  .single-track__snapshot h2 {
+    font-size: 18px;
+  }
+
+  .single-track__info .hollow.hollow--sml {
+    margin-top: 0px;
+    position: relative;
+    top: -10px;
   }
 }
