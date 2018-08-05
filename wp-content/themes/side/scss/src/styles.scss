@@ -1,7 +1,9 @@
 $primary: #009874;
-$secondary: #fff;
+$secondary: #fffff2;
 $border: 5px solid $primary;
 $black: #000;
+$background: #fffff2;
+$tertiary: #ff3300;
 
 @mixin centerer {
   position: absolute;
@@ -23,6 +25,7 @@ html {
 }
 
 body {
+  background: $background;
   color: $primary;
   font-family: 'Space Mono', sans-serif;
 }
@@ -84,6 +87,7 @@ p {
 }
 
 .logo-col a {
+  color: $primary;
   font-weight: 800;
   text-decoration: none;
 }
@@ -157,6 +161,14 @@ p {
   position: absolute;
 }
 
+.social a {
+  color: $tertiary;
+}
+
+.menu {
+  color: $tertiary;
+}
+
 .menu li {
   line-height: 50px;
 }
@@ -166,9 +178,9 @@ p {
 }
 
 .hollow {
-  color: white;
+  color: $background;
   font-size: 50px;
-  text-shadow: 0 -1px 0 $primary, 1px 0 0 $primary, 0 1px 0 $primary, -1px 0 0 $primary;
+  text-shadow: 0 -1px 0 $tertiary, 1px 0 0 $tertiary, 0 1px 0 $tertiary, -1px 0 0 $tertiary;
   text-transform: uppercase;
 }
 
@@ -183,6 +195,7 @@ p {
 
 .stamp .hollow {
   display: inline;
+  text-shadow: 0 -1px 0 $primary, 1px 0 0 $primary, 0 1px 0 $primary, -1px 0 0 $primary;
 }
 
 .latest-col .stamp {
@@ -198,6 +211,7 @@ p {
 
 .latest-list {
   list-style-type: none;
+  margin-top: 0px;
   overflow: hidden;
   padding-left: 0;
 }
@@ -207,7 +221,6 @@ p {
   background-repeat: no-repeat!important;
   background-size: cover!important;
   display: block;
-  //filter: grayscale(100%);
   float: left;
   height: 10vw;
   position: relative;
@@ -216,19 +229,42 @@ p {
   @include transition(0.3s);
 }
 
-.latest-list__card:hover {
-  //filter: grayscale(0%);
-}
-
 .latest-list__card a {
   display: block;
   height: 100%;
   width: 100%;
+}
 
+.image--red {
+  position: relative;
+
+  &:after {
+    background-color: $tertiary;
+    content: '';
+    height: 100%;
+    left: 0px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+}
+
+.latest-list__album-art {
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  display: block;
+  filter: grayscale(100%);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 .latest-list__name {
-  background: $black;;
+  background: $black;
   bottom: 0px;
   color: $secondary;
   display: none;
@@ -272,6 +308,10 @@ p {
   width: 100%;
 }
 
+.reviews-list li b {
+  color: $tertiary;
+}
+
 .reviews-list__thumb {
   @include centerer;
 }
@@ -302,6 +342,7 @@ p {
 }
 
 .album-art {
+  filter: grayscale(100%);
   height: auto;
   margin-top: 25px;
   width: 100%;

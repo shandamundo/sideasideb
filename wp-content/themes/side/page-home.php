@@ -22,9 +22,8 @@
           <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">instagram</a></li>
+          <li><a href="https://www.facebook.com/Side-A-Side-B-1053932354780374" target="_blank">facebook</a></li>
+          <li><a href="https://www.instagram.com/sideasidebblog/" target="_blank">instagram</a></li>
         </ul>
       </div>
     </div>
@@ -64,8 +63,11 @@
               $artistID = $artist[0]->ID;
               $artistName = get_field('name', $artistID);
 
-              echo '<li class="latest-list__card" style="background: url('.$albumArt.')">
-                      <a href="'.$url.'"><span class="latest-list__name">'.$artistName.' - '.$albumName.'</span></a>
+              echo '<li class="latest-list__card">
+                      <a href="'.$url.'" class="image--red">
+                      <span class="latest-list__album-art"  style="background: url('.$albumArt.')"></span>
+                      <span class="latest-list__name">'.$artistName.' - '.$albumName.'</span>
+                      </a>
                     </li>';
             }
             
