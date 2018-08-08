@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Reviews Page
+ * Template Name: Single Reviews Page
  * @package WordPress
  * @subpackage Side
  * @since Side 1.0
@@ -19,7 +19,7 @@
         <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/singles">Singles</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
@@ -30,29 +30,26 @@
   </div>
   <div class="full center">
     <div class="half-col center">
-      <h1 class="hollow">Reviews</h1>
+      <h1 class="hollow">Singles</h1>
       <ul class="reviews-list">
         <?php 
         
         $reviews = get_posts([
           'numberposts' => -1,
-          'post_type' => 'review'
+          'post_type' => 'single'
         ]);
 
         foreach($reviews as $review){
 
           $id = $review->ID;
           $url = get_permalink($id);
-          $album = get_field('album', $id);
-          $albumName = get_field('name', $album[0]->ID);
-          $artist = get_field('artist', $album[0]->ID);
-          $artistID = $artist[0]->ID;
-          $artistName = get_field('name', $artistID);
+          $artist = get_field('artist', $id);
+          $name = $artist->post_title;
 
           echo '<li>
                   <a href="'.$url.'">
                     <span class="reviews-list__thumb">
-                  <b style="text-decoration: underline;">'.$artistName.'</b><br/>'.$albumName.'
+                  <b style="text-decoration: underline;">'.$name.'</b><br/>'.get_field('title', $id).'
                     </span>
                   </a>
                 </li>';

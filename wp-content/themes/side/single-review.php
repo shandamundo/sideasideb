@@ -38,8 +38,8 @@
       </div>
       <div class="menu-col">
         <ul class="menu">
-          <li><a href="/reviews">Reviews</a></li>
           <li><a href="/">Home</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
