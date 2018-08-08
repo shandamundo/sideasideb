@@ -73,7 +73,7 @@ $author = get_field('author');
             '<li>
               <span class="rating">'.$review['rating'].'</span>
               <p>'.$review['text'].'</p>
-              <h5>'.$review['reviewer']->user_firstname. ' ' . $review['reviewer']->user_lastname.'</h5>
+              <h5>'.$review['reviewer']['user_firstname']. ' ' . $review['reviewer']['user_lastname'].'</h5>
             </li>';
         }
         ?>
