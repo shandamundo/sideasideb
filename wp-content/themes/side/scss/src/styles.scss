@@ -419,6 +419,19 @@ p {
   text-align: left;
 }
 
+.single-track__body .hollow {
+  background: $primary;
+  display: inline-block;
+  text-shadow: 0 -1px 0 $primary, 1px 0 0 $primary, 0 1px 0 $primary, -1px 0 0 $primary;
+  margin-left: 25px;
+  padding: 0px 25px;
+}
+
+.single-track__body .author {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
 .single-track__micro-review-list {
   column-count: 2;
   list-style-type: none;

@@ -17,7 +17,8 @@ $artistLink = get_permalink($artistID);
 
 $artistName = get_field('name', $artistID);
 
-$singleArt = get_field('single_art')
+$singleArt = get_field('single_art');
+$score = get_field('score');
 
 ?>
 
@@ -33,8 +34,8 @@ $singleArt = get_field('single_art')
       </div>
       <div class="menu-col">
         <ul class="menu">
-          <li><a href="/reviews">Reviews</a></li>
           <li><a href="/">Home</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
@@ -55,7 +56,9 @@ $singleArt = get_field('single_art')
       <iframe src="https://open.spotify.com/embed/album/<?php echo get_field('spotify_album_id'); ?>" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
     </div>
     <div class="single-track__body">
+    <h3 class="author">Scoped by <?php echo $author['user_firstname'] . ' ' . $author['user_lastname']; ?></h3>
       <?php echo get_field('review'); ?>
+      <h1 class="hollow"><?php echo $score; ?>/10</h1>
     </div>
     <h2 class="hollow">What others thought</h2>
     <dv class="single-track__micro-reviews ">
