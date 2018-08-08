@@ -21,8 +21,7 @@ $name = get_field('name');
     <div class="col">
       <div class="logo-col">
         <a href="<?php echo $artistLink; ?>"><img src="<?php echo get_field('image'); ?>" class="album-art" /></a>
-        <h1>Artist</h1>
-        <h1>Profile</h1>
+        <h1>Artist Profile</h1>
       </div>
       <div class="menu-col">
         <ul class="menu">
@@ -43,20 +42,25 @@ $name = get_field('name');
       <h1 class="hollow"><?php echo $name; ?></h1>
       <?php echo get_field('description'); ?>
     </div>
-    <h2>Reviews</h2>
     <?php 
-
-      $albums = get_posts([
-        'numberposts' => -1,
-        'post_type' => 'album',
-        'meta_query' => [
-          [
-            'key' => 'artist',
-            'value' => get_the_ID(),
-            'compare' => 'LIKE'
-          ]
+    
+    $albums = get_posts([
+      'numberposts' => -1,
+      'post_type' => 'album',
+      'meta_query' => [
+        [
+          'key' => 'artist',
+          'value' => get_the_ID(),
+          'compare' => 'LIKE'
         ]
-      ]);
+      ]
+    ]);
+
+    ?>
+    <?php if(count($albums) > 0): ?>
+    <h2>Album Reviews</h2>
+    <?php endif; ?>
+    <?php 
 
       $reviews = [];
 
