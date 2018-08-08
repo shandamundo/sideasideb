@@ -2,9 +2,9 @@
 # This file is distributed under the GPL v3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Yoast SEO 7.9\n"
+"Project-Id-Version: Yoast SEO 7.9.1\n"
 "Report-Msgid-Bugs-To: https://github.com/yoast/wordpress-seo/issues\n"
-"POT-Creation-Date: 2018-07-24 08:22:04+00:00\n"
+"POT-Creation-Date: 2018-08-07 07:13:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,8 +79,8 @@ msgstr ""
 #: admin/metabox/class-metabox-add-keyword-tab.php:32
 #: admin/metabox/class-metabox-keyword-synonyms-button.php:27
 #: admin/metabox/class-metabox-keyword-synonyms-button.php:31
-#: admin/metabox/class-metabox.php:485
-#: admin/taxonomy/class-taxonomy-metabox.php:297
+#: admin/metabox/class-metabox.php:487
+#: admin/taxonomy/class-taxonomy-metabox.php:298
 msgid "Get %s now!"
 msgstr ""
 
@@ -212,9 +212,9 @@ msgstr ""
 
 #: admin/class-admin.php:202
 #: admin/google_search_console/class-gsc-platform-tabs.php:42
-#: admin/taxonomy/class-taxonomy-metabox.php:163
-#: admin/taxonomy/class-taxonomy-metabox.php:171
-#: admin/taxonomy/class-taxonomy-metabox.php:174
+#: admin/taxonomy/class-taxonomy-metabox.php:164
+#: admin/taxonomy/class-taxonomy-metabox.php:172
+#: admin/taxonomy/class-taxonomy-metabox.php:175
 msgid "Settings"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr ""
 msgid "New %1$s Title"
 msgstr ""
 
-#: admin/class-config.php:124 admin/metabox/class-metabox.php:938
+#: admin/class-config.php:124 admin/metabox/class-metabox.php:959
 #: admin/taxonomy/class-taxonomy.php:124
 msgid "Use Image"
 msgstr ""
@@ -946,19 +946,19 @@ msgid "%s Image"
 msgstr ""
 
 #: admin/class-social-admin.php:93 admin/class-social-admin.php:95
-#: admin/taxonomy/class-taxonomy-metabox.php:190
+#: admin/taxonomy/class-taxonomy-metabox.php:191
 msgid "Facebook / Open Graph metadata"
 msgstr ""
 
 #: admin/class-social-admin.php:106 admin/class-social-admin.php:108
-#: admin/taxonomy/class-taxonomy-metabox.php:191
+#: admin/taxonomy/class-taxonomy-metabox.php:192
 msgid "Twitter metadata"
 msgstr ""
 
 #: admin/class-social-admin.php:117 admin/class-social-admin.php:120
 #: admin/menu/class-admin-menu.php:127
-#: admin/taxonomy/class-taxonomy-metabox.php:195
-#: admin/taxonomy/class-taxonomy-metabox.php:198
+#: admin/taxonomy/class-taxonomy-metabox.php:196
+#: admin/taxonomy/class-taxonomy-metabox.php:199
 #: inc/wpseo-non-ajax-functions.php:283
 msgid "Social"
 msgstr ""
@@ -1112,7 +1112,7 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: admin/class-yoast-form.php:494 admin/metabox/class-metabox.php:696
+#: admin/class-yoast-form.php:494 admin/metabox/class-metabox.php:717
 #: admin/taxonomy/class-taxonomy-fields-presenter.php:129
 msgid "Upload Image"
 msgstr ""
@@ -2109,8 +2109,8 @@ msgstr ""
 #: admin/import/class-import-settings.php:76
 #: admin/import/class-import-settings.php:82
 #: admin/import/class-import-settings.php:88
-#: admin/import/class-import-settings.php:119
-#: admin/import/class-import-settings.php:159
+#: admin/import/class-import-settings.php:124
+#: admin/import/class-import-settings.php:164
 msgid "Settings could not be imported:"
 msgstr ""
 
@@ -2119,19 +2119,19 @@ msgid "Upload failed."
 msgstr ""
 
 #. translators: %s expands to an error message.
-#: admin/import/class-import-settings.php:123
+#: admin/import/class-import-settings.php:128
 msgid "Unzipping failed with error \"%s\"."
 msgstr ""
 
-#: admin/import/class-import-settings.php:130
+#: admin/import/class-import-settings.php:135
 msgid "Unzipping failed - file settings.ini not found."
 msgstr ""
 
-#: admin/import/class-import-settings.php:159
+#: admin/import/class-import-settings.php:164
 msgid "No settings found in file."
 msgstr ""
 
-#: admin/import/class-import-settings.php:206
+#: admin/import/class-import-settings.php:211
 msgid "Settings successfully imported."
 msgstr ""
 
@@ -2501,80 +2501,80 @@ msgstr ""
 msgid "Meta box"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:395 admin/metabox/class-metabox.php:398
-#: admin/taxonomy/class-taxonomy-metabox.php:142
-#: admin/taxonomy/class-taxonomy-metabox.php:145
+#: admin/metabox/class-metabox.php:397 admin/metabox/class-metabox.php:400
+#: admin/taxonomy/class-taxonomy-metabox.php:143
+#: admin/taxonomy/class-taxonomy-metabox.php:146
 msgid "Content optimization"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:415 admin/metabox/class-metabox.php:423
-#: admin/metabox/class-metabox.php:426
+#: admin/metabox/class-metabox.php:417 admin/metabox/class-metabox.php:425
+#: admin/metabox/class-metabox.php:428
 msgid "Advanced"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:440
-#: admin/taxonomy/class-taxonomy-metabox.php:252
+#: admin/metabox/class-metabox.php:442
+#: admin/taxonomy/class-taxonomy-metabox.php:253
 msgid "Go Premium"
 msgstr ""
 
 #. translators: %1$s expands to Yoast SEO Premium.
-#: admin/metabox/class-metabox.php:474
-#: admin/taxonomy/class-taxonomy-metabox.php:286
+#: admin/metabox/class-metabox.php:476
+#: admin/taxonomy/class-taxonomy-metabox.php:287
 msgid ""
 "You're not getting the benefits of %1$s yet. If you had %1$s, you could use "
 "its awesome features:"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:475
-#: admin/taxonomy/class-taxonomy-metabox.php:287 admin/views/licenses.php:169
+#: admin/metabox/class-metabox.php:477
+#: admin/taxonomy/class-taxonomy-metabox.php:288 admin/views/licenses.php:169
 msgid "Redirect manager"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:476
-#: admin/taxonomy/class-taxonomy-metabox.php:288
+#: admin/metabox/class-metabox.php:478
+#: admin/taxonomy/class-taxonomy-metabox.php:289
 msgid "Create and manage redirects within your WordPress install."
 msgstr ""
 
-#: admin/metabox/class-metabox.php:477
-#: admin/taxonomy/class-taxonomy-metabox.php:289 admin/views/licenses.php:173
+#: admin/metabox/class-metabox.php:479
+#: admin/taxonomy/class-taxonomy-metabox.php:290 admin/views/licenses.php:173
 msgid "Multiple focus keywords"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:478
-#: admin/taxonomy/class-taxonomy-metabox.php:290
+#: admin/metabox/class-metabox.php:480
+#: admin/taxonomy/class-taxonomy-metabox.php:291
 msgid "Optimize a single post for up to 5 keywords."
 msgstr ""
 
-#: admin/metabox/class-metabox.php:479
-#: admin/taxonomy/class-taxonomy-metabox.php:291
+#: admin/metabox/class-metabox.php:481
+#: admin/taxonomy/class-taxonomy-metabox.php:292
 msgid "Social Previews"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:480
-#: admin/taxonomy/class-taxonomy-metabox.php:292
+#: admin/metabox/class-metabox.php:482
+#: admin/taxonomy/class-taxonomy-metabox.php:293
 msgid "Check what your Facebook or Twitter post will look like."
 msgstr ""
 
-#: admin/metabox/class-metabox.php:481
-#: admin/taxonomy/class-taxonomy-metabox.php:293 admin/views/licenses.php:181
+#: admin/metabox/class-metabox.php:483
+#: admin/taxonomy/class-taxonomy-metabox.php:294 admin/views/licenses.php:181
 msgid "Premium support"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:482
-#: admin/taxonomy/class-taxonomy-metabox.php:294
+#: admin/metabox/class-metabox.php:484
+#: admin/taxonomy/class-taxonomy-metabox.php:295
 msgid "Gain access to our 24/7 support team."
 msgstr ""
 
-#: admin/metabox/class-metabox.php:487
-#: admin/taxonomy/class-taxonomy-metabox.php:299
+#: admin/metabox/class-metabox.php:489
+#: admin/taxonomy/class-taxonomy-metabox.php:300
 msgid "More info"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:519 admin/metabox/class-metabox.php:522
+#: admin/metabox/class-metabox.php:521 admin/metabox/class-metabox.php:524
 msgid "Add-ons"
 msgstr ""
 
-#: admin/metabox/class-metabox.php:926
+#: admin/metabox/class-metabox.php:947
 msgid ""
 "SEO issue: The featured image should be at least 200 by 200 pixels to be "
 "picked up by Facebook and other social media sites."
@@ -2809,7 +2809,7 @@ msgid ""
 msgstr ""
 
 #: admin/pages/tools.php:36 admin/views/tool-bulk-editor.php:37
-#: admin/views/tool-bulk-editor.php:40 admin/views/tool-file-editor.php:99
+#: admin/views/tool-bulk-editor.php:40 admin/views/tool-file-editor.php:100
 msgid "Bulk editor"
 msgstr ""
 
@@ -4173,57 +4173,57 @@ msgid "Posts list"
 msgstr ""
 
 #. translators: %s expands to robots.txt.
-#: admin/views/tool-file-editor.php:21
+#: admin/views/tool-file-editor.php:22
 msgid "You cannot create a %s file."
 msgstr ""
 
 #. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:42 admin/views/tool-file-editor.php:69
+#: admin/views/tool-file-editor.php:43 admin/views/tool-file-editor.php:70
 msgid "You cannot edit the %s file."
 msgstr ""
 
 #. translators: %s expands to robots.txt.
-#: admin/views/tool-file-editor.php:58
+#: admin/views/tool-file-editor.php:59
 msgid "Updated %s"
 msgstr ""
 
 #. translators: %s expands to robots.txt.
-#: admin/views/tool-file-editor.php:117
+#: admin/views/tool-file-editor.php:118
 msgid "You don't have a %s file, create one here:"
 msgstr ""
 
 #. translators: %s expands to robots.txt.
-#: admin/views/tool-file-editor.php:126
+#: admin/views/tool-file-editor.php:127
 msgid "Create %s file"
 msgstr ""
 
 #. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:136 admin/views/tool-file-editor.php:236
+#: admin/views/tool-file-editor.php:137 admin/views/tool-file-editor.php:237
 msgid "If you had a %s file and it was editable, you could edit it from here."
 msgstr ""
 
 #. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:154 admin/views/tool-file-editor.php:204
+#: admin/views/tool-file-editor.php:155 admin/views/tool-file-editor.php:205
 msgid "If your %s were writable, you could edit it from here."
 msgstr ""
 
 #. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:166 admin/views/tool-file-editor.php:216
+#: admin/views/tool-file-editor.php:167 admin/views/tool-file-editor.php:217
 msgid "Edit the content of your %s:"
 msgstr ""
 
 #. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:175 admin/views/tool-file-editor.php:225
+#: admin/views/tool-file-editor.php:176 admin/views/tool-file-editor.php:226
 msgid "Save changes to %s"
 msgstr ""
 
 #. translators: %s expands to ".htaccess".
-#: admin/views/tool-file-editor.php:187
+#: admin/views/tool-file-editor.php:188
 msgid "%s file"
 msgstr ""
 
@@ -5437,51 +5437,52 @@ msgid ""
 msgstr ""
 
 #. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/internalLinksAssessment.js:19
+#: node_modules/yoastseo/js/assessments/seo/InternalLinksAssessment.js:108
 #, javascript-format
 msgid ""
 "No %1$sinternal links%2$s appear in this page, consider adding some as "
 "appropriate."
 msgstr ""
 
-#. Translators: %1$s expands the number of internal links, %2$s expands to a link on yoast.com, %3$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/internalLinksAssessment.js:27
+#. Translators: %1$s expands the number of internal links, %2$s expands to a link on yoast.com,
+#. %3$s expands to the anchor end tag
+#: node_modules/yoastseo/js/assessments/seo/InternalLinksAssessment.js:117
 #, javascript-format
 msgid "This page has %1$s %2$sinternal link(s)%3$s, all nofollowed."
 msgstr ""
 
+#. Translators: %1$s expands to the number of internal links, %2$s expands to a link on yoast.com,
+#. %3$s expands to the anchor end tag
+#: node_modules/yoastseo/js/assessments/seo/InternalLinksAssessment.js:126
+#, javascript-format
+msgid "This page has %1$s %2$sinternal link(s)%3$s."
+msgstr ""
+
 #. Translators: %1$s expands to the number of nofollow links, %2$s expands to a link on yoast.com,
 #. %3$s expands to the anchor end tag, %4$s to the number of internal links
-#: node_modules/yoastseo/js/assessments/seo/internalLinksAssessment.js:36
+#: node_modules/yoastseo/js/assessments/seo/InternalLinksAssessment.js:134
 #, javascript-format
 msgid ""
 "This page has %1$s nofollowed %2$sinternal link(s)%3$s and %4$s normal "
 "internal link(s)."
 msgstr ""
 
-#. Translators: %1$s expands to the number of internal links, %2$s expands to a link on yoast.com,
-#. %3$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/internalLinksAssessment.js:45
-#, javascript-format
-msgid "This page has %1$s %2$sinternal link(s)%3$s."
-msgstr ""
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/introductionKeywordAssessment.js:18
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/IntroductionKeywordAssessment.js:104
 #, javascript-format
 msgid "The focus keyword appears in the %1$sfirst paragraph%2$s of the copy."
 msgstr ""
 
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/introductionKeywordAssessment.js:25
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/IntroductionKeywordAssessment.js:111
 #, javascript-format
 msgid ""
 "The focus keyword doesn't appear in the %1$sfirst paragraph%2$s of the copy. "
 "Make sure the topic is clear immediately."
 msgstr ""
 
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/keyphraseLengthAssessment.js:21
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/KeyphraseLengthAssessment.js:96
 #, javascript-format
 msgid ""
 "No %1$sfocus keyword%2$s was set for this page. If you do not set a focus "
@@ -5489,29 +5490,41 @@ msgid ""
 msgstr ""
 
 #. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/keyphraseLengthAssessment.js:26
+#: node_modules/yoastseo/js/assessments/seo/KeyphraseLengthAssessment.js:104
 #, javascript-format
 msgid "The %1$skeyphrase%2$s is over 10 words, a keyphrase should be shorter."
 msgstr ""
 
-#. Translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count,
-#. %3$s expands to the maximum keyword density percentage, %4$s expands to a link to a Yoast.com article
-#. about keyword density, %5$s expands to the anchor end tag.
-#: node_modules/yoastseo/js/assessments/seo/keywordDensityAssessment.js:29
+#: node_modules/yoastseo/js/assessments/seo/KeywordDensityAssessment.js:166
 #, javascript-format
 msgid ""
-"The exact-match %4$skeyword density%5$s is %1$s, which is way over the "
-"advised %3$s maximum; the focus keyword was found %2$d time."
+"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
+"keyword was found %2$d times."
+msgstr ""
+
+#: node_modules/yoastseo/js/assessments/seo/KeywordDensityAssessment.js:178
+#, javascript-format
+msgid ""
+"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
+"keyword was found %2$d time."
 msgid_plural ""
-"The exact-match %4$skeyword density%5$s is %1$s, which is way over the "
-"advised %3$s maximum; the focus keyword was found %2$d times."
+"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
+"keyword was found %2$d times."
 msgstr[0] ""
 msgstr[1] ""
 
-#. Translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count,
-#. %3$s expands to the maximum keyword density percentage, %4$s expands to a link to a Yoast.com article
-#. about keyword density, %5$s expands to the anchor end tag.
-#: node_modules/yoastseo/js/assessments/seo/keywordDensityAssessment.js:37
+#: node_modules/yoastseo/js/assessments/seo/KeywordDensityAssessment.js:190
+#, javascript-format
+msgid ""
+"The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus "
+"keyword was found %2$d time."
+msgid_plural ""
+"The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus "
+"keyword was found %2$d times."
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/yoastseo/js/assessments/seo/KeywordDensityAssessment.js:203
 #, javascript-format
 msgid ""
 "The exact-match %4$skeyword density%5$s is %1$s, which is over the advised "
@@ -5522,40 +5535,19 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: node_modules/yoastseo/js/assessments/seo/keywordDensityAssessment.js:45
+#: node_modules/yoastseo/js/assessments/seo/KeywordDensityAssessment.js:216
 #, javascript-format
 msgid ""
-"The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus "
-"keyword was found %2$d time."
+"The exact-match %4$skeyword density%5$s is %1$s, which is way over the "
+"advised %3$s maximum; the focus keyword was found %2$d time."
 msgid_plural ""
-"The exact-match %3$skeyword density%4$s is %1$s, which is great; the focus "
-"keyword was found %2$d times."
-msgstr[0] ""
-msgstr[1] ""
-
-#: node_modules/yoastseo/js/assessments/seo/keywordDensityAssessment.js:53
-#, javascript-format
-msgid ""
-"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
-"keyword was found %2$d times."
-msgstr ""
-
-#. Translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count,
-#. %3$s expands to a link to a Yoast.com article about keyword density,
-#. %4$s expands to the anchor end tag.
-#: node_modules/yoastseo/js/assessments/seo/keywordDensityAssessment.js:61
-#, javascript-format
-msgid ""
-"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
-"keyword was found %2$d time."
-msgid_plural ""
-"The exact-match %3$skeyword density%4$s is %1$s, which is too low; the focus "
-"keyword was found %2$d times."
+"The exact-match %4$skeyword density%5$s is %1$s, which is way over the "
+"advised %3$s maximum; the focus keyword was found %2$d times."
 msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: %1$s opens a link to a Yoast article about stop words, %2$s closes the link
-#: node_modules/yoastseo/js/assessments/seo/keywordStopWordsAssessment.js:18
+#: node_modules/yoastseo/js/assessments/seo/keywordStopWordsAssessment.js:20
 #, javascript-format
 msgid ""
 "The focus keyword contains a stop word. This may or may not be wise "
@@ -5568,7 +5560,7 @@ msgstr[1] ""
 
 #. Translators: %1$s expands to a link to a Yoast.com article about keyword and topic distribution,
 #. %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/largestKeywordDistanceAssessment.js:94
+#: node_modules/yoastseo/js/assessments/seo/LargestKeywordDistanceAssessment.js:106
 #, javascript-format
 msgid ""
 "Use your keyword or synonyms more often in your text so that we can check "
@@ -5577,7 +5569,7 @@ msgstr ""
 
 #. Translators: %1$s expands to a link to a Yoast.com article about keyword and topic distribution,
 #. %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/largestKeywordDistanceAssessment.js:103
+#: node_modules/yoastseo/js/assessments/seo/LargestKeywordDistanceAssessment.js:115
 #, javascript-format
 msgid ""
 "Large parts of your text do not contain the keyword. Try to %1$sdistribute"
@@ -5590,7 +5582,7 @@ msgstr[1] ""
 
 #. Translators: %1$s expands to a link to a Yoast.com article about keyword and topic distribution,
 #. %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/largestKeywordDistanceAssessment.js:112
+#: node_modules/yoastseo/js/assessments/seo/LargestKeywordDistanceAssessment.js:124
 #, javascript-format
 msgid ""
 "Some parts of your text do not contain the keyword. Try to %1$sdistribute"
@@ -5603,7 +5595,7 @@ msgstr[1] ""
 
 #. Translators: %1$s expands to a link to a Yoast.com article about keyword and topic distribution,
 #. %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/largestKeywordDistanceAssessment.js:120
+#: node_modules/yoastseo/js/assessments/seo/LargestKeywordDistanceAssessment.js:132
 #, javascript-format
 msgid ""
 "Your keyword is %1$sdistributed%2$s evenly throughout the text. That's great."
@@ -5613,14 +5605,8 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/metaDescriptionKeywordAssessment.js:17
-#, javascript-format
-msgid "The meta description %1$scontains the focus keyword%2$s."
-msgstr ""
-
-#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/metaDescriptionKeywordAssessment.js:25
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/MetaDescriptionKeywordAssessment.js:98
 #, javascript-format
 msgid ""
 "A meta description has been specified, but it %1$sdoes not contain the focus "
@@ -5807,7 +5793,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/textCompetingLinksAssessment.js:22
+#: node_modules/yoastseo/js/assessments/seo/TextCompetingLinksAssessment.js:111
 #, javascript-format
 msgid ""
 "You're %1$slinking to another page with the focus keyword%2$s you want this "
@@ -5845,22 +5831,23 @@ msgstr ""
 msgid "The %1$simages%2$s on this page are missing alt attributes."
 msgstr ""
 
-#. Translators: %1$s expands to the focus keyword, %2$s expands to a link on yoast.com,
-#. %3$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/titleKeywordAssessment.js:21
+#. Translators: %1$s expands to the keyphrase, %2$s expands to a link on yoast.com,
+#. %3$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/TitleKeywordAssessment.js:113
 #, javascript-format
 msgid "The focus keyword '%1$s' does not appear in the %2$sSEO title%3$s."
 msgstr ""
 
-#. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/titleKeywordAssessment.js:27
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/TitleKeywordAssessment.js:121
 #, javascript-format
 msgid ""
 "The %1$sSEO title%2$s contains the focus keyword, at the beginning which is "
 "considered to improve rankings."
 msgstr ""
 
-#: node_modules/yoastseo/js/assessments/seo/titleKeywordAssessment.js:31
+#. Translators: %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag.
+#: node_modules/yoastseo/js/assessments/seo/TitleKeywordAssessment.js:128
 #, javascript-format
 msgid ""
 "The %1$sSEO title%2$s contains the focus keyword, but it does not appear at "
@@ -5868,7 +5855,7 @@ msgid ""
 msgstr ""
 
 #. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/urlKeywordAssessment.js:109
+#: node_modules/yoastseo/js/assessments/seo/UrlKeywordAssessment.js:100
 #, javascript-format
 msgid ""
 "The focus keyword does not appear in the %1$sURL%2$s for this page. If you "
@@ -5877,7 +5864,7 @@ msgid ""
 msgstr ""
 
 #. Translators:  %1$s expands to a link on yoast.com, %2$s expands to the anchor end tag
-#: node_modules/yoastseo/js/assessments/seo/urlKeywordAssessment.js:113
+#: node_modules/yoastseo/js/assessments/seo/UrlKeywordAssessment.js:107
 #, javascript-format
 msgid "The focus keyword appears in the %1$sURL%2$s for this page."
 msgstr ""
@@ -5887,7 +5874,7 @@ msgid "The slug for this page is a bit long, consider shortening it."
 msgstr ""
 
 #. Translators: %1$s opens a link to a wikipedia article about stop words, %2$s closes the link
-#: node_modules/yoastseo/js/assessments/seo/urlStopWordsAssessment.js:18
+#: node_modules/yoastseo/js/assessments/seo/urlStopWordsAssessment.js:20
 #, javascript-format
 msgid ""
 "The slug for this page contains a %1$sstop word%2$s, consider removing it."
@@ -5897,7 +5884,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. Translators: this link is referred to in the content analysis when a slug contains one or more stop words
-#: node_modules/yoastseo/js/assessments/seo/urlStopWordsAssessment.js:37
+#: node_modules/yoastseo/js/assessments/seo/urlStopWordsAssessment.js:41
 msgid "http://en.wikipedia.org/wiki/Stop_words"
 msgstr ""
 
@@ -5907,13 +5894,14 @@ msgstr ""
 msgid "An error occurred in the '%1$s' assessment"
 msgstr ""
 
-#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:65
-msgid "You've never used this focus keyword before, very good."
+#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:69
+#, javascript-format
+msgid "You've %1$snever used this focus keyword before%2$s, very good."
 msgstr ""
 
 #. Translators: %1$s and %2$s expand to an admin link where the focus keyword is already used. %3$s and %4$s
 #. expand to a link to an article on yoast.com about why you should not use a keyword more than once.
-#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:74
+#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:78
 #, javascript-format
 msgid ""
 "You've used this focus keyword %1$sonce before%2$s. It’s probably a good "
@@ -5924,7 +5912,7 @@ msgstr ""
 #. Translators: %1$s and $3$s expand to the admin search page for the focus keyword, %2$d expands to the number
 #. of times this focus keyword has been used before, %4$s and %5$s expand to a link to an article on yoast.com
 #. about why you should not use a keyword more than once.
-#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:84
+#: node_modules/yoastseo/js/bundledPlugins/previouslyUsedKeywords.js:88
 #, javascript-format
 msgid ""
 "You've used this focus keyword %1$s%2$d times before%3$s. It’s probably a "
@@ -6025,6 +6013,67 @@ msgstr ""
 msgid "Please provide a meta description by editing the snippet below."
 msgstr ""
 
+#: yoast-components/composites/KeywordSuggestions/KeywordSuggestions.js:94
+msgid "Prominent words"
+msgstr ""
+
+#: yoast-components/composites/KeywordSuggestions/KeywordSuggestions.js:56
+msgid ""
+"The following words and word combinations occur the most in the content. "
+"These give an indication of what your content focuses on. If the words "
+"differ a lot from your topic, you might want to rewrite your content "
+"accordingly. "
+msgstr ""
+
+#: yoast-components/composites/KeywordSuggestions/KeywordSuggestions.js:47
+msgid ""
+"Once you add a bit more copy, we'll give you a list of words and word "
+"combination that occur the most in the content. These give an indication of "
+"what your content focuses on."
+msgstr ""
+
+#: yoast-components/composites/KeywordSuggestions/KeywordSuggestions.js:18
+msgid ""
+"Read our %1$sultimate guide to keyword research%2$s to learn more about "
+"keyword research and keyword strategy."
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/composites/LinkSuggestion.js:18
+msgid "Copy link to suggested article: %s"
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/composites/LinkSuggestion.js:17
+msgid "Copy link"
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:159
+msgid "Consider linking to these articles"
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:135
+msgid "Consider linking to these {{a}}cornerstone articles{{/a}}"
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:84
+msgid ""
+"Once you add a bit more copy, we'll give you a list of related content here "
+"to which you could link in your post."
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:73
+msgid ""
+"Read {{a}}our article about site structure{{/a}} to learn more about how "
+"internal linking can help improve your SEO."
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:56
+msgid "Not supported!"
+msgstr ""
+
+#: yoast-components/composites/LinkSuggestions/LinkSuggestions.js:37
+msgid "Copied!"
+msgstr ""
+
 #: yoast-components/composites/OnboardingWizard/OnboardingWizard.js:296
 msgid "%s installation wizard"
 msgstr ""
@@ -6099,15 +6148,15 @@ msgstr ""
 msgid "MailChimp signup failed:"
 msgstr ""
 
-#: js/src/components/MediaUpload.js:107
+#: js/src/components/MediaUpload.js:132
 msgid "Choose image"
 msgstr ""
 
-#: js/src/components/MediaUpload.js:97
-msgid "company logo image preview"
+#: js/src/components/MediaUpload.js:114
+msgid "image preview"
 msgstr ""
 
-#: js/src/components/MediaUpload.js:90
+#: js/src/components/MediaUpload.js:93
 msgid "Remove the image"
 msgstr ""
 
@@ -6119,12 +6168,12 @@ msgstr ""
 msgid "Number of results found: %d"
 msgstr ""
 
-#: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:150
+#: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:151
 msgid "Your site language is set to %s."
 msgstr ""
 
 # %s is the translated name of the language.
-#: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:171
+#: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:172
 msgid ""
 "Your site language is set to %s. If this is not correct, contact your site "
 "administrator."
