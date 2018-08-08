@@ -19,6 +19,7 @@ $artistName = get_field('name', $artistID);
 
 $singleArt = get_field('single_art');
 $score = get_field('score');
+$author = get_field('author');
 
 ?>
 
