@@ -42,20 +42,25 @@ $name = get_field('name');
       <h1 class="hollow"><?php echo $name; ?></h1>
       <?php echo get_field('description'); ?>
     </div>
-    <h2>Reviews</h2>
     <?php 
-
-      $albums = get_posts([
-        'numberposts' => -1,
-        'post_type' => 'album',
-        'meta_query' => [
-          [
-            'key' => 'artist',
-            'value' => get_the_ID(),
-            'compare' => 'LIKE'
-          ]
+    
+    $albums = get_posts([
+      'numberposts' => -1,
+      'post_type' => 'album',
+      'meta_query' => [
+        [
+          'key' => 'artist',
+          'value' => get_the_ID(),
+          'compare' => 'LIKE'
         ]
-      ]);
+      ]
+    ]);
+
+    ?>
+    <?php if(count($albums) > 0): ?>
+    <h2>Album Reviews</h2>
+    <?php endif; ?>
+    <?php 
 
       $reviews = [];
 
