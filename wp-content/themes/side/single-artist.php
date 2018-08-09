@@ -47,16 +47,17 @@ $name = get_field('name');
     $albums = get_posts([
       'numberposts' => -1,
       'post_type' => 'album',
-      'meta_query' => [
-        [
+      'meta_query' => array(
+        array(
           'key' => 'artist',
-          'value' => get_the_ID(),
+          'value' => '"' . get_the_ID() . '"',
           'compare' => 'LIKE'
-        ]
-      ]
+        )
+      )
     ]);
 
     ?>
+
     <?php if(count($albums) > 0): ?>
     <h2>Album Reviews</h2>
     <?php endif; ?>
