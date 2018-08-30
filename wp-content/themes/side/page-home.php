@@ -48,7 +48,7 @@
             <?php 
 
             $reviews = get_posts([
-              'numberposts' => 4,
+              'numberposts' => 24,
               'post_type' => 'review'
             ]);
 
