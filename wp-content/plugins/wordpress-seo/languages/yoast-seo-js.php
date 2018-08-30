@@ -357,7 +357,7 @@ $generated_i18n_strings = array(
 	/* Translators: this link is referred to in the content analysis when a slug contains one or more stop words */
 	__( 'http://en.wikipedia.org/wiki/Stop_words', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoastseo/js/assessor.js:165
+	// Reference: node_modules/yoastseo/js/assessor.js:166
 	/* Translators: %1$s expands to the name of the assessment. */
 	__( 'An error occurred in the \'%1$s\' assessment', 'wordpress-seo' ),
 
