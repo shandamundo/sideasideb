@@ -71,9 +71,11 @@
         <div class="review half--review__point">
           <?php echo get_field('side_a_final'); ?>
         </div>
+        <h4>Sounds like</h4>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_sounds'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
-        <h5>Sounds like</h5>
-        <?php echo get_field('side_a_sounds'); ?>
     </div>
     <div class="half center half--review half--b">
         <h1 class="hollow">Side B</h1>
@@ -91,9 +93,11 @@
         <div class="review half--review__point">
           <?php echo get_field('side_b_final'); ?>
         </div>
+        <h4>Sounds like</h4>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_sounds'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
-        <h5>Sounds like</h5>
-        <?php echo get_field('side_b_sounds'); ?>
     </div>
 </div>
 <script>
