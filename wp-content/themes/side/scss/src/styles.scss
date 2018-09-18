@@ -299,9 +299,14 @@ p {
   margin-left: 12.5px;
   margin-right: 12.5px;
   margin-top: 10px;
-  min-height: 150px;
+  min-height: 390px;
   position: relative;
+  transition: .2s ease-in-out;
   width: calc(33.333% - 25px);
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .reviews-list li a {
@@ -318,6 +323,16 @@ p {
 
 .reviews-list__thumb {
   @include centerer;
+  position: static;
+}
+
+.review-list__art {
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  height: 300px;
+  padding: 10px;
+  width: 300px;
 }
 
 .half__button {

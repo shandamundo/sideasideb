@@ -44,10 +44,12 @@
           $id = $review->ID;
           $url = get_permalink($id);
           $artist = get_field('artist', $id);
+          $albumArt = get_field('single_art', $id);
           $name = $artist->post_title;
 
           echo '<li>
                   <a href="'.$url.'">
+                    <img src="'.$albumArt.'" class="review-list__art" />
                     <span class="reviews-list__thumb">
                   <b style="text-decoration: underline;">'.$name.'</b><br/>'.get_field('title', $id).'
                     </span>
