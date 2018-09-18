@@ -32,10 +32,13 @@ $author = get_field('author');
         <a href="<?php echo $artistLink; ?>"><img src="<?php echo $singleArt; ?>" class="album-art" /></a>
         <h2><?php echo $albumName; ?></h2>
         <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
+        <h1 class="review-site-title"><a href="/home">sideAsideB</a></h1>
       </div>
       <div class="menu-col">
         <ul class="menu">
           <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/singles">Singles</a></li>
           <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">

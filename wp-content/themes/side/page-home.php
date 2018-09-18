@@ -18,9 +18,10 @@
       </div>
       <div class="menu-col">
         <ul class="menu">
+          <li><a href="/" class="active">Home</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="/reviews">Reviews</a></li>
           <li><a href="/singles">Singles</a></li>
+          <li><a href="/reviews">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
@@ -65,9 +66,9 @@
               $artistName = get_field('name', $artistID);
 
               echo '<li class="latest-list__card">
-                      <a href="'.$url.'" class="image--red">
+                      <a href="'.$url.'" class="image--red latest-list__name">
+                      '.$artistName.' - '.$albumName.'
                       <span class="latest-list__album-art"  style="background: url('.$albumArt.')"></span>
-                      <span class="latest-list__name">'.$artistName.' - '.$albumName.'</span>
                       </a>
                     </li>';
             }

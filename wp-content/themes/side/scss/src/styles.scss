@@ -175,6 +175,10 @@ p {
 
 .menu li a {
   font-size: 20px;
+
+  &.active {
+    color: $tertiary;
+  }
 }
 
 .hollow {
@@ -330,7 +334,9 @@ p {
   background-position: center!important;
   background-repeat: no-repeat!important;
   background-size: cover!important;
+  display: block;
   height: 300px;
+  margin: 0 auto;
   padding: 10px;
   width: 300px;
 }
@@ -364,7 +370,7 @@ p {
   filter: grayscale(100%);
   height: auto;
   margin-top: 25px;
-  width: 100%;
+  width: 50%;
 }
 
 .review-thumb {
@@ -489,6 +495,12 @@ p {
   line-height: 50px;
   text-align: center;
   width: 50px;
+}
+
+.review-site-title {
+  border-top: 1px solid $tertiary;
+  margin-top: 50px;
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 1999px) {
