@@ -297,20 +297,25 @@ p {
 }
 
 .reviews-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
+  margin: 0 auto;
   padding-left: 0px;
+  width: 50%;
 }
 
 .reviews-list li {
   border: 1px solid $primary;
-  display: inline-block;
+  flex-grow: 1;
   margin-left: 12.5px;
   margin-right: 12.5px;
   margin-top: 10px;
   min-height: 390px;
   position: relative;
   transition: .2s ease-in-out;
-  width: calc(33.333% - 25px);
+  width: 33.333%;
 
   &:hover {
     transform: scale(1.02);
@@ -336,8 +341,9 @@ p {
 }
 
 .reviews-list__thumb {
-  @include centerer;
-  position: static;
+  clear: both;
+  display: block;
+  padding: 0px 10px;
 }
 
 .review-list__art {
@@ -586,7 +592,7 @@ p {
   }
 
   .social {
-    bottom: 0px;
+    bottom: 10px;
     right: 25px;
   }
 
@@ -628,7 +634,7 @@ p {
   body.single-review .album-art {
     height: auto;
     margin-top: 0;
-    width: 100%;
+    width: 50%;
   }
 
   body.single-artist .left-col h1,
@@ -728,12 +734,26 @@ p {
     height: auto;
     padding-top: 10px;
   }
+
+  .half-col {
+    height: auto;
+  }
+
+  body.home .half {
+    height: auto;
+  }
+
+  .reviews-list {
+    width: 100%;
+  }
+
+  .single-template-default .left-col {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  body.page-template-page-reviews .container.main {
-    width: calc(100vw - 26px);
-  }
+
 
   .container.main {
     width: auto;
@@ -771,7 +791,7 @@ p {
   }
 
   .social {
-    top: 10px;
+    top: auto;
   }
 
   .single-track__micro-review-list {
@@ -872,5 +892,10 @@ p {
 
   .reviews-list li {
     margin-bottom: 15px;
+  }
+
+  body.single-artist .album-art,
+  body.single-review .album-art {
+    width: 100%;
   }
 }

@@ -20,7 +20,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/singles">Singles</a></li>
-          <li><a href="/reviews" class="active">Reviews</a></li>
+          <li><a href="/albums" class="active">Reviews</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
@@ -31,7 +31,7 @@
   </div>
   <div class="full center">
     <div class="half-col center">
-      <h1 class="hollow">Reviews</h1>
+      <h1 class="hollow">Albums</h1>
       <ul class="reviews-list">
         <?php 
         
