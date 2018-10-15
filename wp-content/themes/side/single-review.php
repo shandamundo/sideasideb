@@ -32,14 +32,19 @@
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
-        <a href="<?php echo $artistLink; ?>"><img src="<?php echo $albumArt; ?>" class="album-art" /></a>
-        <h2><?php echo $albumName; ?></h2>
-        <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
+        <div class="logo-col__info">
+          <a href="<?php echo $artistLink; ?>"><img src="<?php echo $albumArt; ?>" class="album-art" /></a>
+          <h2><?php echo $albumName; ?></h2>
+          <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
+      </div>
       </div>
       <div class="menu-col">
+        <h1 class="review-site-title"><a href="/home">sideAsideB</a></h1>
         <ul class="menu">
           <li><a href="/">Home</a></li>
-          <li><a href="/reviews">Reviews</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/singles">Singles</a></li>
+          <li><a href="/albums">Albums</a></li>
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
@@ -68,9 +73,11 @@
         <div class="review half--review__point">
           <?php echo get_field('side_a_final'); ?>
         </div>
+        <h4>Sounds like</h4>
+        <div class="review half--review__point">
+          <?php echo get_field('side_a_sounds'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_a_score'); ?>/10</h1>
-        <h5>Sounds like</h5>
-        <?php echo get_field('side_a_sounds'); ?>
     </div>
     <div class="half center half--review half--b">
         <h1 class="hollow">Side B</h1>
@@ -88,9 +95,11 @@
         <div class="review half--review__point">
           <?php echo get_field('side_b_final'); ?>
         </div>
+        <h4>Sounds like</h4>
+        <div class="review half--review__point">
+          <?php echo get_field('side_b_sounds'); ?>
+        </div>
         <h1 class="hollow"><?php echo get_field('side_b_score'); ?>/10</h1>
-        <h5>Sounds like</h5>
-        <?php echo get_field('side_b_sounds'); ?>
     </div>
 </div>
 <script>
