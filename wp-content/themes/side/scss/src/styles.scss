@@ -86,18 +86,6 @@ p {
   padding: 0px 25px;
 }
 
-.menu-col--no-border {
-  .review-site-title {
-    border-top: 0px;
-    margin-top: 20px;
-    padding-top: 0px;
-  }
-}
-
-.menu-col .review-site-title {
-  font-weight: 800;
-}
-
 .logo-col a {
   color: $primary;
   font-weight: 800;
@@ -187,10 +175,6 @@ p {
 
 .menu li a {
   font-size: 20px;
-
-  &.active {
-    color: $tertiary;
-  }
 }
 
 .hollow {
@@ -305,64 +289,35 @@ p {
 }
 
 .reviews-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 auto;
   padding-left: 0px;
-  width: 50%;
 }
 
 .reviews-list li {
   border: 1px solid $primary;
-  flex-grow: 1;
+  display: inline-block;
   margin-left: 12.5px;
   margin-right: 12.5px;
   margin-top: 10px;
-  min-height: 390px;
+  min-height: 150px;
   position: relative;
-  transition: .2s ease-in-out;
-  width: 33.333%;
-
-  &:hover {
-    transform: scale(1.02);
-  }
-}
-
-.reviews-list li {
-  margin-bottom: 15px;
-  min-height: auto;
-  padding-bottom: 10px;
+  width: calc(33.333% - 25px);
 }
 
 .reviews-list li a {
-  display: block;
   height: 100%;
-  position: relative;
+  left: 0px;
+  position: absolute;
+  top: 0px;
   width: 100%;
 }
-
 
 .reviews-list li b {
   color: $tertiary;
 }
 
 .reviews-list__thumb {
-  clear: both;
-  display: block;
-  padding: 0px 10px;
-}
-
-.review-list__art {
-  background-position: center!important;
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  width: calc(100% - 30px);
+  @include centerer;
 }
 
 .half__button {
@@ -394,7 +349,7 @@ p {
   filter: grayscale(100%);
   height: auto;
   margin-top: 25px;
-  width: 50%;
+  width: 100%;
 }
 
 .review-thumb {
@@ -521,18 +476,6 @@ p {
   width: 50px;
 }
 
-.review-site-title {
-  border-top: 1px solid $tertiary;
-  margin-top: 50px;
-  padding-top: 40px;
-}
-
-@media screen and (min-width: 1200px) {
-  .review-list__art {
-    max-width: 300px;
-  }
-}
-
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;
@@ -546,6 +489,11 @@ p {
 
   body.home .half {
     height: calc(100vh - 196px);
+  }
+
+  body.page-template-page-reviews .full {
+    height: calc(100vh - 222px);
+    overflow-y: scroll;
   }
 
   .latest {
@@ -600,7 +548,7 @@ p {
   }
 
   .social {
-    bottom: 10px;
+    bottom: 55px;
     right: 25px;
   }
 
@@ -616,7 +564,7 @@ p {
   }
 
   .review-template-default .left-col {
-    height: auto;
+    height: 235px;
   }
 
   .album-art {
@@ -640,9 +588,7 @@ p {
 
   body.single-artist .album-art,
   body.single-review .album-art {
-    height: auto;
-    margin-top: 0;
-    width: 50%;
+    display: none;
   }
 
   body.single-artist .left-col h1,
@@ -667,6 +613,7 @@ p {
 
   body.single-artist .full.center {
     height: calc(100vh - 222px);
+    overflow-y: auto;
   }
 
   body.single-review .container.main {
@@ -713,60 +660,12 @@ p {
   body.single-single .left-col .col {
     height: 0vh;
   }
-
-  .review-site-title {
-    border: none;
-    margin-left: 0px !important;
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-
-  .menu-col, .logo-col {
-    clear: both;
-    display: block;
-    float: right;
-  }
-
-  .menu-col .review-site-title, .menu-col .menu {
-    clear: both;
-  }
-
-  .menu-col .review-site-title {
-    padding-top: 5px;
-  }
-
-  .container.main .left-col .col {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    padding-top: 10px;
-  }
-
-  .half-col {
-    height: auto;
-  }
-
-  body.home .half {
-    height: auto;
-  }
-
-  .reviews-list {
-    width: 100%;
-  }
-
-  .single-template-default .left-col {
-    height: auto;
-  }
-
-  body.single-artist {
-    .logo-col__info {
-      display: none;
-    }
-  }
 }
 
 @media screen and (max-width: 767px) {
-
+  body.page-template-page-reviews .container.main {
+    width: calc(100vw - 26px);
+  }
 
   .container.main {
     width: auto;
@@ -800,11 +699,11 @@ p {
   }
 
   body.single-review .social {
-    top: 0px;
+    top: 130px;
   }
 
   .social {
-    top: auto;
+    top: 10px;
   }
 
   .single-track__micro-review-list {
@@ -859,17 +758,8 @@ p {
     width: 50%;
   }
 
-  body.single-artist {
-    .review-thumb {
-      height: calc(100vw - 15px);
-      width:  calc(100vw - 15px);
-    }
-  }
-
   .social {
-    bottom: auto;
     right: 5px;
-    top: 20px;
   }
 
   .half.center {
@@ -910,35 +800,5 @@ p {
     margin-top: 0px;
     position: relative;
     top: -10px;
-  }
-
-  .reviews-list li {
-    margin-bottom: 15px;
-  }
-
-  body.single-artist .album-art,
-  body.single-review .album-art {
-    width: 100%;
-  }
-
-  .single-track__info,
-  .single-track__snapshot,
-  .single-track__spotify {
-    padding: 0px;
-  }
-  
-  .single-track__spotify {
-    width: 100%;
-  }
-
-  .single-track__body {
-    text-align: center;
-    .author {
-      margin-left: 0px;
-    }
-
-    h1.hollow {
-      margin-left: 0px;
-    }
   }
 }
