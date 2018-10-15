@@ -86,6 +86,14 @@ p {
   padding: 0px 25px;
 }
 
+.menu-col--no-border {
+  .review-site-title {
+    border-top: 0px;
+    margin-top: 20px;
+    padding-top: 0px;
+  }
+}
+
 .menu-col .review-site-title {
   font-weight: 800;
 }
@@ -659,7 +667,6 @@ p {
 
   body.single-artist .full.center {
     height: calc(100vh - 222px);
-    overflow-y: auto;
   }
 
   body.single-review .container.main {
@@ -749,6 +756,12 @@ p {
 
   .single-template-default .left-col {
     height: auto;
+  }
+
+  body.single-artist {
+    .logo-col__info {
+      display: none;
+    }
   }
 }
 
@@ -846,8 +859,17 @@ p {
     width: 50%;
   }
 
+  body.single-artist {
+    .review-thumb {
+      height: calc(100vw - 15px);
+      width:  calc(100vw - 15px);
+    }
+  }
+
   .social {
+    bottom: auto;
     right: 5px;
+    top: 20px;
   }
 
   .half.center {
@@ -897,5 +919,26 @@ p {
   body.single-artist .album-art,
   body.single-review .album-art {
     width: 100%;
+  }
+
+  .single-track__info,
+  .single-track__snapshot,
+  .single-track__spotify {
+    padding: 0px;
+  }
+  
+  .single-track__spotify {
+    width: 100%;
+  }
+
+  .single-track__body {
+    text-align: center;
+    .author {
+      margin-left: 0px;
+    }
+
+    h1.hollow {
+      margin-left: 0px;
+    }
   }
 }

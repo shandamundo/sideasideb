@@ -13,9 +13,11 @@
   <div class="left-col br">
     <div class="col">
       <div class="logo-col">
-        <h1><a href="/home">sideAsideB</a></h1>
+        <div class="logo-col__info">
       </div>
-      <div class="menu-col">
+      </div>
+      <div class="menu-col menu-col--no-border">
+        <h1 class="review-site-title"><a href="/home">sideAsideB</a></h1>
         <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
@@ -24,7 +26,7 @@
         </ul>
         <ul class="social">
           <li><a href="https://www.facebook.com/sideasidebblog" target="_blank">facebook</a></li>
-          <li><a href="https://www.instagram.com/sideasidebblog/" target="_blank">instagram</a></li>
+          <li><a href="https://instagram.com/sideasidebblog" target="_blank">instagram</a></li>
         </ul>
       </div>
     </div>

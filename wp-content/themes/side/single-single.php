@@ -30,10 +30,10 @@ $author = get_field('author');
     <div class="col">
       <div class="logo-col">
         <div class="logo-col__info">
-            <a href="<?php echo $artistLink; ?>"><img src="<?php echo $singleArt; ?>" class="album-art" /></a>
-            <h2><?php echo $albumName; ?></h2>
-            <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
-        </div>
+        <a href="<?php echo $artistLink; ?>"><img src="<?php echo $singleArt; ?>" class="album-art" /></a>
+        <h2><?php echo $albumName; ?></h2>
+        <h3><a href="<?php echo $artistLink; ?>"><?php echo $artistName; ?></a></h3>
+      </div>
       </div>
       <div class="menu-col">
         <h1 class="review-site-title"><a href="/home">sideAsideB</a></h1>
