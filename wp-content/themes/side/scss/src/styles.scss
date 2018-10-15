@@ -86,6 +86,10 @@ p {
   padding: 0px 25px;
 }
 
+.menu-col .review-site-title {
+  font-weight: 800;
+}
+
 .logo-col a {
   color: $primary;
   font-weight: 800;
@@ -313,13 +317,19 @@ p {
   }
 }
 
+.reviews-list li {
+  margin-bottom: 15px;
+  min-height: auto;
+  padding-bottom: 10px;
+}
+
 .reviews-list li a {
+  display: block;
   height: 100%;
-  left: 0px;
-  position: absolute;
-  top: 0px;
+  position: relative;
   width: 100%;
 }
+
 
 .reviews-list li b {
   color: $tertiary;
@@ -335,10 +345,10 @@ p {
   background-repeat: no-repeat!important;
   background-size: cover!important;
   display: block;
-  height: 300px;
+  height: auto;
   margin: 0 auto;
   padding: 10px;
-  width: 300px;
+  width: calc(100% - 30px);
 }
 
 .half__button {
@@ -503,6 +513,12 @@ p {
   padding-top: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .review-list__art {
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 1999px) {
   p {
     font-size: 14px;
@@ -516,11 +532,6 @@ p {
 
   body.home .half {
     height: calc(100vh - 196px);
-  }
-
-  body.page-template-page-reviews .full {
-    height: calc(100vh - 222px);
-    overflow-y: scroll;
   }
 
   .latest {
@@ -575,7 +586,7 @@ p {
   }
 
   .social {
-    bottom: 55px;
+    bottom: 0px;
     right: 25px;
   }
 
@@ -591,7 +602,7 @@ p {
   }
 
   .review-template-default .left-col {
-    height: 235px;
+    height: auto;
   }
 
   .album-art {
@@ -615,7 +626,9 @@ p {
 
   body.single-artist .album-art,
   body.single-review .album-art {
-    display: none;
+    height: auto;
+    margin-top: 0;
+    width: 100%;
   }
 
   body.single-artist .left-col h1,
@@ -687,6 +700,34 @@ p {
   body.single-single .left-col .col {
     height: 0vh;
   }
+
+  .review-site-title {
+    border: none;
+    margin-left: 0px !important;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .menu-col, .logo-col {
+    clear: both;
+    display: block;
+    float: right;
+  }
+
+  .menu-col .review-site-title, .menu-col .menu {
+    clear: both;
+  }
+
+  .menu-col .review-site-title {
+    padding-top: 5px;
+  }
+
+  .container.main .left-col .col {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -726,7 +767,7 @@ p {
   }
 
   body.single-review .social {
-    top: 130px;
+    top: 0px;
   }
 
   .social {
@@ -827,5 +868,9 @@ p {
     margin-top: 0px;
     position: relative;
     top: -10px;
+  }
+
+  .reviews-list li {
+    margin-bottom: 15px;
   }
 }
